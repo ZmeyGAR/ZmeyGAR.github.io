@@ -31,46 +31,116 @@
 </head>
 
 <body class="main-page__body">
-        <aside class="sidebar" id="sidebar" role="menu">
+        <aside class="sidebar open" id="sidebar" role="menu">
+
+        <div class="sidebar__close">
+            <button class="close" id="sidebar-close" aria-controls="sidebar"
+                aria-label="Свернуть панель навигации по каталогу" title="Свернуть панель навигации по каталогу">
+                &#10008; </button>
+        </div>
+
         <div class="sidebar__container">
 
-            <div class="sidebar__burger">
-                <svg class="burger" viewBox="0 0 100 100">
-    <path class=" top"
-        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-    <path class=" middle" d="m 30,50 h 40" />
-    <path class=" bottom"
-        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-</svg>
-            </div>
-
-
             <div class="sidebar__header">
-                личный кабинет
+                <div class="profile">
+                    <button>Зарегистрироваться</button>
+                    <button>Войти</button>
+
+                    <div class="user">
+                        <div class="user-name">
+                            Рандомный Человек
+                            <span>Успешный земледелец</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="widgets">
+                    <li><button>Корзина</button> </li>
+                    <li><button>Понравилось</button></li>
+                    <li>
+                        <div class="search">
+    <form>
+        <input type="search" placeholder="Поиск" aria-label="Поиск">
+        <button type="submit"></button>
+    </form>
+</div>
+                    </li>
+                </ul>
             </div>
             <div class="sidebar__body">
-                <ul class="widgets">
-                    <li>виджет 1</li>
-                    <li>виджет 2</li>
-                </ul>
+                <h3>Каталог</h3>
+                <div class="sidebar__catalog">
+                    <ul class="catalog">
+                        <li><input type="checkbox" id="sub-one" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-one">
+                                <span> &#8250;</span>Семена</label>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-one"> <span> &#8249;</span> Назад</label>
+                                </li>
+                                <li><a href="#">томаты</a></li>
+                                <li><a href="#">арбуз</a></li>
+                                <li><a href="#">дыня</a></li>
+                                <li><a href="#">баклажаны</a></li>
+                                <li><a href="#">фасоль</a></li>
+                                <li><a href="#">кабачки</a></li>
+                                <li><a href="#">кукуруза</a></li>
+                                <li>
+                                    <input type="checkbox" id="sub-tree" class="submenu-toggle">
+                                    <label class="submenu-label" for="sub-tree"><span> &#8250;</span>Капуста</label>
+                                    <ul class="menu-sub">
+                                        <li class="menu-sub-title">
+                                            <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
+                                                Назад</label>
+                                        </li>
+                                        <li><a href="#">белокачанная</a></li>
+                                        <li><a href="#">краснокачанная</a></li>
+                                        <li><a href="#">цветная</a></li>
+                                        <li><a href="#">пекинская</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">лук</a></li>
+                                <li><a href="#">Огурец</a></li>
+                                <li>
+                                    <input type="checkbox" id="sub-tree" class="submenu-toggle">
+                                    <label class="submenu-label" for="sub-tree"><span> &#8250;</span>перец</label>
+                                    <ul class="menu-sub">
+                                        <li class="menu-sub-title">
+                                            <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
+                                                Назад</label>
+                                        </li>
+                                        <li><a href="#">острый</a></li>
+                                        <li><a href="#">сладкий</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">салат</a></li>
+                                <li><a href="#">зелень</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">УДОБРЕНИЯ</a></li>
+                        <li><a href="#">Средства защиты</a></li>
+                        <li>
+                            <input type="checkbox" id="sub-two" class="submenu-toggle">
+                            <label class="submenu-label" for="sub-two"><span> &#8250;</span>укрывной материал</label>
+                            <ul class="menu-sub">
+                                <li class="menu-sub-title">
+                                    <label class="submenu-label" for="sub-two"> <span> &#8249;</span> Назад</label>
+                                </li>
+                                <li><a href="#">Агроспан</a></li>
+                                <li><a href="#">Мульчирующая пленка</a></li>
+                                <li><a href="#">тепличная пленка</a></li>
+                                <li><a href="#">сетка</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Инструмент</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
             <div class="sidebar__footer">
-                <ul class="widgets">
-                    <li>виджет 1</li>
-                    <li>виджет 2</li>
-                </ul>
-                <ul class="widgets">
-                    <li>виджет 1</li>
-                    <li>виджет 2</li>
-                </ul>
-                <ul class="widgets">
-                    <li>виджет 1</li>
-                    <li>виджет 2</li>
-                </ul>
-                <ul class="widgets">
-                    <li>виджет 1</li>
-                    <li>виджет 2</li>
-                </ul>
+
             </div>
         </div>
 
@@ -102,10 +172,24 @@
 
         <div class="header__body header-body">
 
-    
+    <div class="header-body__burger">
+        <button class="burger-sidebar" id="burger-sidebar" aria-controls="sidebar" aria-label="Показать сайдбар">
+
+    <span>
+        <svg class="burger" viewBox="0 0 100 100">
+    <path class=" top"
+        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+    <path class=" middle" d="m 30,50 h 40" />
+    <path class=" bottom"
+        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+</svg>
+    </span>
+
+</button>
+    </div>
 
     <div class="header-body__logo">
-        <a href="/" class="logo" aria-label="Ссылка на главную страницу">
+        <a href="/" class="logo" aria-label="Ссылка на главную страницу" title="Вернуться на главную страницу">
     <picture>
         <source srcset="img/logo.webp" type="image/webp">
         <img src="img/logo.png" alt="Логотип магазина УСПЕХ">
@@ -117,21 +201,12 @@
         <ul class="widgets">
 
             <li class="widgets__item">
-                <a class="phone" href="tel:8 989 855 22 77">8 989 855 22 77</a>
+                <a class="phone" href="tel:+79898552277">8 989 855 22 77</a>
             </li>
 
             <li class="widgets__item">
-                <button class="burger-menu" id="burger-menu" aria-controls="sidebar" aria-label="Показать сайдбар">
-
-    <svg class="burger" viewBox="0 0 100 100">
-        <path class=" top"
-            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-        <path class=" middle" d="m 30,50 h 40" />
-        <path class=" bottom"
-            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-    </svg>
-
-    Каталог товаров
+                <button class="feedback" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
+    <span>Заказать звонок</span>
 </button>
             </li>
 
@@ -164,8 +239,6 @@
 </nav>
 
     </div>
-
-
 
 </div>
 
