@@ -18,6 +18,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap&subset=latin,latin-ext,cyrillic"
     rel="stylesheet">
 
+
+
 <!-- normalize.css -->
 <link rel="stylesheet" href="styles/normalize.css">
 
@@ -31,6 +33,7 @@
 </head>
 
 <body class="main-page__body">
+
         <aside class="sidebar" id="sidebar" role="menu">
 
         <div class="sidebar__close">
@@ -81,80 +84,87 @@
             <div class="sidebar__body">
                 <h3>Каталог</h3>
                 <div class="sidebar__catalog">
-                    <ul class="catalog">
-                        <li><input type="checkbox" id="sub-one" class="submenu-toggle">
-                            <label class="submenu-label" for="sub-one">
-                                <span> &#8250;</span>Семена</label>
-                            <ul class="menu-sub">
-                                <li class="menu-sub-title">
-                                    <label class="submenu-label" for="sub-one"> <span> &#8249;</span> Назад</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="sub-tree" class="submenu-toggle">
-                                    <label class="submenu-label" for="sub-tree"><span> &#8250;</span>Капуста</label>
-                                    <ul class="menu-sub">
-                                        <li class="menu-sub-title">
-                                            <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
-                                                Назад</label>
-                                        </li>
-                                        <li><a href="#">белокачанная</a></li>
-                                        <li><a href="#">краснокачанная</a></li>
-                                        <li><a href="#">цветная</a></li>
-                                        <li><a href="#">пекинская</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="sub-tree" class="submenu-toggle">
-                                    <label class="submenu-label" for="sub-tree"><span> &#8250;</span>перец</label>
-                                    <ul class="menu-sub">
-                                        <li class="menu-sub-title">
-                                            <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
-                                                Назад</label>
-                                        </li>
-                                        <li><a href="#">острый</a></li>
-                                        <li><a href="#">сладкий</a></li>
 
-                                    </ul>
-                                </li>
-                                <li><a href="#">томаты</a></li>
-                                <li><a href="#">арбуз</a></li>
-                                <li><a href="#">дыня</a></li>
-                                <li><a href="#">баклажаны</a></li>
-                                <li><a href="#">фасоль</a></li>
-                                <li><a href="#">кабачки</a></li>
-                                <li><a href="#">кукуруза</a></li>
-                                <li><a href="#">лук</a></li>
-                                <li><a href="#">Огурец</a></li>
-                                <li><a href="#">салат</a></li>
-                                <li><a href="#">зелень</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">УДОБРЕНИЯ</a></li>
-                        <li><a href="#">Средства защиты</a></li>
-                        <li>
-                            <input type="checkbox" id="sub-two" class="submenu-toggle">
-                            <label class="submenu-label" for="sub-two"><span> &#8250;</span>укрывной материал</label>
-                            <ul class="menu-sub">
-                                <li class="menu-sub-title">
-                                    <label class="submenu-label" for="sub-two"> <span> &#8249;</span> Назад</label>
-                                </li>
-                                <li><a href="#">Агроспан</a></li>
-                                <li><a href="#">Мульчирующая пленка</a></li>
-                                <li><a href="#">тепличная пленка</a></li>
-                                <li><a href="#">сетка</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Инструмент</a>
-                        </li>
+                    <div class="catalog">
+                        <ul class="catalog--list">
+                            <li><input type="checkbox" id="sub-one" class="submenu-toggle">
+                                <label class="submenu-label" for="sub-one">
+                                    <span> &#8250;</span>Семена</label>
+                                <ul class="menu-sub">
+                                    <li class="menu-sub-title">
+                                        <label class="submenu-label" for="sub-one"> <span> &#8249;</span> Назад</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="sub-tree" class="submenu-toggle">
+                                        <label class="submenu-label" for="sub-tree"><span> &#8250;</span>Капуста</label>
+                                        <ul class="menu-sub">
+                                            <li class="menu-sub-title">
+                                                <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
+                                                    Назад</label>
+                                            </li>
+                                            <li><a href="#">белокачанная</a></li>
+                                            <li><a href="#">краснокачанная</a></li>
+                                            <li><a href="#">цветная</a></li>
+                                            <li><a href="#">пекинская</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="sub-tree" class="submenu-toggle">
+                                        <label class="submenu-label" for="sub-tree"><span> &#8250;</span>перец</label>
+                                        <ul class="menu-sub">
+                                            <li class="menu-sub-title">
+                                                <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
+                                                    Назад</label>
+                                            </li>
+                                            <li><a href="#">острый</a></li>
+                                            <li><a href="#">сладкий</a></li>
 
-                    </ul>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">томаты</a></li>
+                                    <li><a href="#">арбуз</a></li>
+                                    <li><a href="#">дыня</a></li>
+                                    <li><a href="#">баклажаны</a></li>
+                                    <li><a href="#">фасоль</a></li>
+                                    <li><a href="#">кабачки</a></li>
+                                    <li><a href="#">кукуруза</a></li>
+                                    <li><a href="#">лук</a></li>
+                                    <li><a href="#">Огурец</a></li>
+                                    <li><a href="#">салат</a></li>
+                                    <li><a href="#">зелень</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">УДОБРЕНИЯ</a></li>
+                            <li><a href="#">Средства защиты</a></li>
+                            <li>
+                                <input type="checkbox" id="sub-two" class="submenu-toggle">
+                                <label class="submenu-label" for="sub-two"><span> &#8250;</span>укрывной
+                                    материал</label>
+                                <ul class="menu-sub">
+                                    <li class="menu-sub-title">
+                                        <label class="submenu-label" for="sub-two"> <span> &#8249;</span> Назад</label>
+                                    </li>
+                                    <li><a href="#">Агроспан</a></li>
+                                    <li><a href="#">Мульчирующая пленка</a></li>
+                                    <li><a href="#">тепличная пленка</a></li>
+                                    <li><a href="#">сетка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Инструмент</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 
         </div>
 
     </aside>
+
+    <section class="hero">
 
     <header class="header">
     <div class="__container">
@@ -273,322 +283,793 @@
     </div>
 
 </header>
+    <div class="hero__title">
+        <h1>Успешное земледелие</h1>
+    </div>
+</section>
 
-    <section class="section catalog" id="catalog">
+    <section class="section" id="catalog">
     <div class="section__container __container">
         <h2 class="section__title">Товары и услуги</h2>
 
         <div class="section__content">
-            <ul class="catalog__grid">
-                <li>
-                    <a href="#" class="category">
-                        <picture><source srcset="img/seeds.webp" type="image/webp"><img src="img/seeds.jpg" alt="Семена"></picture>
-                        <span>Семена</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category">
-                        <picture><source srcset="img/fertilizer.webp" type="image/webp"><img src="img/fertilizer.jpg" alt="удобрения"></picture>
-                        <span>удобрения</span>
-                    </a></li>
-                <li>
-                    <a href="#" class="category">
-                        <picture><source srcset="img/chemistry.webp" type="image/webp"><img src="img/chemistry.jpg" alt="средства защиты"></picture>
-                        <span>средства защиты</span>
-                    </a></li>
-                <li>
-                    <a href="#" class="category">
-                        <picture><source srcset="img/membrane.webp" type="image/webp"><img src="img/membrane.jpg" alt="укрывной материал"></picture>
+            <div class="catalog">
+                <ul class="catalog--grid category">
 
-                        <span>укрывной материал</span>
-                    </a></li>
-                <li>
-                    <a href="#" class="category">
-                        <picture><source srcset="img/tools.webp" type="image/webp"><img src="img/tools.jpg" alt="инструмент"></picture>
-                        <span>инструмент</span>
-                    </a></li>
-            </ul>
+                    <li class="category__item">
+                        <!-- seeds -->
+                        <input class="category__checkbox" type="checkbox" id="seeds">
+
+                        <label class="category__label" for="seeds">
+                            <picture>
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
+                                    type="image/jpg">
+
+                                <source
+                                    srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
+                                    type="image/webp">
+                                <source srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
+                                    type="image/jpg">
+
+                                <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
+                            </picture>
+                            <span>Семена</span>
+                        </label>
+
+                        <ul class="catalog--grid category__sub-category">
+                            <li class="category__come-back">
+                                <label class="category__label" for="seeds">
+
+                                    <picture>
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
+                                    </picture>
+
+                                    <span>назад</span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <!-- капуста -->
+                                <input class="category__checkbox" type="checkbox" id="cabbage">
+
+                                <label class="category__label" for="cabbage">
+                                    <picture>
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/seeds/seeds.h245.jpg" alt="капуста">
+                                    </picture>
+                                    <span>капуста</span>
+                                </label>
+
+                                <ul class="catalog--grid category__sub-category">
+                                    <li class="category__come-back">
+                                        <label class="category__label" for="cabbage">
+
+                                            <picture>
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
+                                                    type="image/webp">
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <source
+                                                    srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
+                                                    type="image/webp">
+                                                <source
+                                                    srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
+                                            </picture>
+
+                                            <span>назад</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="category__label">
+                                            <picture>
+
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                                    type="image/webp">
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                                    type="image/webp">
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                            </picture>
+                                            <span>Краснокачанная</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="category__label">
+                                            <picture>
+
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                                    type="image/webp">
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                                    type="image/webp">
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                            </picture>
+                                            <span>белокачанная</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="category__label">
+                                            <picture>
+
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                                    type="image/webp">
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                                    type="image/webp">
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                            </picture>
+                                            <span>пекинская</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="category__label">
+                                            <picture>
+
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                                    type="image/webp">
+                                                <source media="(min-width: 2559px)"
+                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                                    type="image/webp">
+                                                <source
+                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                                    type="image/jpg">
+
+                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                            </picture>
+                                            <span>цветная</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>томат</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>Огурец</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>перец</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>зелень</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>баклажаны</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="category__item">
+                        <!-- fertilizer -->
+                        <a href="#" class="category__label">
+                            <picture>
+
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                    type="image/jpg">
+
+                                <source
+                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                    type="image/jpg">
+
+                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                            </picture>
+                            <span>удобрения</span>
+                        </a>
+                    </li>
+                    <li class="category__item">
+                        <!-- chemistry -->
+                        <a href=" #" class="category__label">
+                            <picture>
+
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/chemistry/chemistry.h352.webp 1x, img/catalog/chemistry/chemistry@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/chemistry/chemistry.h352.jpg 1x, img/catalog/chemistry/chemistry@2x.jpg 2x"
+                                    type="image/jpg">
+
+                                <source
+                                    srcset="img/catalog/chemistry/chemistry.h245.webp 1x,img/catalog/chemistry/chemistry.h352.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="img/catalog/chemistry/chemistry.h245.jpg 1x,img/catalog/chemistry/chemistry.h352.jpg 2x"
+                                    type="image/jpg">
+
+                                <img src="img/catalog/chemistry/chemistry.h245.jpg" alt="средства защиты">
+                            </picture>
+                            <span>средства защиты</span>
+                        </a>
+                    </li>
+                    <li class="category__item">
+                        <!-- membrane -->
+                        <input class="category__checkbox" type="checkbox" id="membrane">
+
+                        <label class="category__label" for="membrane">
+                            <picture>
+
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/membrane/membrane.h352.webp 1x, img/catalog/membrane/membrane@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/membrane/membrane.h352.jpg 1x, img/catalog/membrane/membrane@2x.jpg 2x"
+                                    type="image/jpg">
+
+                                <source
+                                    srcset="img/catalog/membrane/membrane.h245.webp 1x,img/catalog/membrane/membrane.h352.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="img/catalog/membrane/membrane.h245.jpg 1x,img/catalog/membrane/membrane.h352.jpg 2x"
+                                    type="image/jpg">
+
+                                <img src="img/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
+                            </picture>
+                            <span>укрывной материал</span>
+                        </label>
+
+                        <ul class="catalog--grid category__sub-category">
+                            <li class="category__come-back">
+                                <label class="category__label" for="membrane">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/membrane/membrane.h352.webp 1x, img/catalog/membrane/membrane@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/membrane/membrane.h352.jpg 1x, img/catalog/membrane/membrane@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/membrane/membrane.h245.webp 1x,img/catalog/membrane/membrane.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/membrane/membrane.h245.jpg 1x,img/catalog/membrane/membrane.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
+                                    </picture>
+                                    <span>назад</span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>плёнка</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>картонка</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>газетка</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>салфетка</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="category__label">
+                                    <picture>
+
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                            type="image/webp">
+                                        <source media="(min-width: 2559px)"
+                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                            type="image/jpg">
+
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                            type="image/jpg">
+
+                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+
+                                    </picture>
+                                    <span>и тд</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="category__item">
+                        <!-- tools -->
+                        <a href=" #" class="category__label">
+                            <picture>
+
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/tools/tools.h352.webp 1x, img/catalog/tools/tools@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/tools/tools.h352.jpg 1x, img/catalog/tools/tools@2x.jpg 2x"
+                                    type="image/jpg">
+
+                                <source
+                                    srcset="img/catalog/tools/tools.h245.webp 1x,img/catalog/tools/tools.h352.webp 2x"
+                                    type="image/webp">
+                                <source srcset="img/catalog/tools/tools.h245.jpg 1x,img/catalog/tools/tools.h352.jpg 2x"
+                                    type="image/jpg">
+
+                                <img src="img/catalog/tools/tools.h245.jpg" alt="инструмент">
+
+                            </picture>
+                            <span>инструмент</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
         </div>
+
+
     </div>
 
 </section>
 
-    <div class="__container">
-        Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Свое бросил рыбными
-        жаренные решила продолжил ее рукопись страну оксмокс злых толку, взобравшись вопрос курсивных текстов наш ipsum
-        великий lorem?
-        Силуэт взобравшись подпоясал своих ipsum, текста гор свой рот сбить он правилами! Рыбными вопрос строчка
-        продолжил рукопись реторический собрал семь подзаголовок! На берегу оксмокс языком послушавшись
-        парадигматическая использовало эта если рукопись.
-        Повстречался дороге одна переписывается путь щеке ручеек ты, великий назад буквоград агентство точках лучше
-        речью грустный живет, вершину свое океана он безопасную всеми своих текста жаренные. Речью ты реторический даже.
-        Заманивший над раз, маленький буквенных последний своих домах предупреждал речью ipsum приставка взобравшись
-        предложения она? Своих живет осталось подзаголовок возвращайся свой, великий буквоград которой заглавных
-        скатился домах рукописи, до родного.
-        Оксмокс за текстами имеет? Заголовок злых не, возвращайся пор свой страна бросил страну единственное, речью
-        продолжил одна? Языкового силуэт коварных лучше, но послушавшись вершину рукопись деревни, своих, lorem что
-        букв.
-        Встретил, языком предупредила одна его сбить запятой заголовок ему ее выйти точках дорогу грустный даль. Наш его
-        вершину рыбными лучше агентство повстречался о пор безопасную что бросил. Щеке, рекламных но!
-        Коварный раз переписывается рукописи подзаголовок имеет путь пояс предупреждал своего злых подпоясал ее, города
-        грамматики безопасную вопроса до обеспечивает образ своих вершину. Заглавных обеспечивает его первую на берегу о
-        текстов безопасную?
-        Прямо семь пунктуация, необходимыми за мир проектах вскоре безорфографичный власти даже даль текст рукопись
-        имеет щеке грустный безопасную. Инициал текстов lorem власти меня всемогущая залетают запятых, океана приставка
-        злых жизни.
-        За пустился запятых агентство большой взгляд раз семь предупредила, встретил текста ее. Толку моей
-        переписывается парадигматическая но пунктуация предупредила великий решила! Диких, первую. Великий что оксмокс
-        использовало правилами семантика приставка.
-        Необходимыми власти запятой составитель вдали курсивных пор строчка, выйти алфавит предупреждал приставка решила
-        его оксмокс, имени грустный ручеек он эта осталось сбить ему свой переписывается буквенных даль заглавных!
-        Строчка, коварных?
-        На берегу первую маленькая собрал что ipsum даже великий, единственное выйти, имени наш, запятых одна путь все
-        пор однажды алфавит. Ее своих свой текста встретил, дороге большого океана речью заманивший буквоград.
-        Гор раз, эта на берегу буквенных безопасную грустный диких что вопрос то речью! Одна, деревни снова? Наш своего
-        рукописи маленький на берегу текстов! Большой текста если предупредила прямо текстов, живет рукопись вопроса.
-        Строчка раз знаках его текст заглавных, свое дороге великий единственное то правилами предложения родного
-        продолжил своего повстречался сих последний океана сбить оксмокс, свою коварных? Всеми не послушавшись рыбного
-        взгляд он.
-        Маленькая всемогущая власти залетают свою подпоясал переписали снова текст ручеек алфавит использовало имеет
-        дорогу продолжил моей речью маленький ему текстами возвращайся, правилами но однажды букв! Обеспечивает моей
-        знаках ты вскоре.
-        Предупреждал речью злых назад переписали города всемогущая дал. Даль ему семантика безорфографичный? Это дорогу
-        она силуэт. Семь ты до переписали которое! Агентство буквенных пояс раз океана то продолжил, не моей.
-        Над но вопрос продолжил прямо вскоре. Океана взобравшись путь букв! Имени даже ручеек рыбными переписывается.
-        Последний пунктуация наш, рот все, деревни образ дороге ему, по всей взобравшись языкового предупредила меня
-        семь?
-        Послушавшись моей, грамматики маленький одна запятой приставка, ведущими которое повстречался что меня семантика
-        сбить текстами пунктуация снова строчка толку заманивший взгляд. Предложения свой свою сбить, последний
-        единственное о маленькая текстами!
-        Знаках пояс до своих на берегу текстами диких дорогу свою, строчка продолжил, текст предупреждал грустный толку,
-        большого которое что предупредила ручеек. Но вскоре снова заманивший которой использовало семь раз знаках
-        составитель!
-        Власти имеет осталось, ручеек первую живет рыбными журчит агентство жизни lorem путь языком все грустный,
-        приставка даль домах обеспечивает о послушавшись ему реторический составитель своих, его если. Грамматики,
-        знаках использовало.
-        Живет обеспечивает выйти но страна возвращайся деревни, подпоясал коварный сих которое имени рыбного великий
-        даже использовало большой курсивных диких над снова пустился парадигматическая своего себя злых жизни рукописи.
-        Все, если!
-        На берегу решила букв то эта назад лучше родного по всей языком его. Свое моей раз первую жизни то знаках образ
-        семантика его! Над составитель родного эта, по всей до щеке подзаголовок ты.
-        Агентство, дорогу? Правилами рыбного текстов это себя повстречался злых ему! Имени даль несколько свой жизни,
-        речью обеспечивает составитель по всей которой города, деревни большого океана текст! О собрал взобравшись
-        переписали возвращайся.
-        Предложения она над свою языком лучше текстами текста оксмокс раз знаках дороге он своих инициал силуэт путь на
-        берегу правилами одна точках парадигматическая текстов, пустился свое составитель послушавшись проектах. Текст,
-        наш?
-        Дороге вдали, текстами коварный, продолжил домах снова выйти он коварных назад ты предупреждал грустный щеке
-        букв. Которой текстами, текста текст переписывается своего взгляд! Эта от всех буквенных рыбного маленькая
-        необходимыми повстречался?
-        Продолжил образ что вскоре строчка свой взобравшись гор ты жаренные ему живет, проектах, за залетают возвращайся
-        маленькая языкового скатился себя. Продолжил моей залетают подзаголовок, ее дороге свой большой ты над.
-        Встретил вскоре, знаках вопрос агентство безопасную имеет своих рукописи родного вопроса над даль несколько
-        безорфографичный ему свой, лучше скатился запятой взобравшись переулка единственное страну дал коварных строчка
-        правилами? Ручеек, толку.
-        Своего ведущими путь ты коварный, первую мир букв свой подзаголовок текста использовало рекламных, вскоре о гор,
-        одна пор агентство там выйти. Лучше выйти мир что сих точках его приставка большого.
-        Переписывается необходимыми страна, его которой точках вопроса, грамматики, семантика возвращайся букв продолжил
-        по всей знаках безопасную дорогу вскоре города там но маленький свой дал первую. Путь рекламных что языком он
-        своего.
-        Единственное несколько переулка, собрал текста от всех всеми даже знаках подзаголовок не моей проектах силуэт
-        меня. Лучше вопроса переписали диких своих, свою вершину океана щеке, даже предупреждал всемогущая они над пор.
-        Свою которое страна несколько. Не переулка дал текста собрал живет своего семь прямо вскоре осталось точках
-        текстов, текстами возвращайся речью оксмокс правилами. Рукопись предупредила запятой по всей что пояс свое
-        жизни.
-        Гор имеет коварных lorem свой лучше, буквенных переписали возвращайся обеспечивает вопрос безорфографичный
-        продолжил рукописи! Рот что возвращайся раз своего грамматики продолжил приставка все, единственное, скатился
-        переписали ведущими, одна оксмокс своих.
-        Рот послушавшись семь то путь возвращайся грамматики оксмокс строчка вскоре заголовок коварных до ipsum, букв
-        щеке предупредила языком образ всеми рыбного диких осталось свою свой предупреждал своих мир? Речью, строчка?
-        Точках за обеспечивает дорогу снова океана рыбного. Буквенных всеми силуэт его своего, вопрос пунктуация
-        необходимыми. Оксмокс буквенных, свое предупредила снова образ выйти? Деревни, инициал живет диких злых лучше
-        все дороге!
-        Переписывается пунктуация не подзаголовок, меня своих если языком дорогу вершину океана взобравшись раз рукописи
-        большого грамматики толку моей имеет подпоясал последний то свою, имени решила пор парадигматическая ты.
-        Коварный, букв.
-        Деревни, переписали живет всемогущая до строчка текст рыбного скатился страну повстречался свою себя собрал
-        силуэт осталось парадигматическая подпоясал грамматики несколько вскоре сбить над lorem, точках снова прямо.
-        Первую, за щеке.
-        Текстов всемогущая вопрос дал вдали текст необходимыми большого родного даль на берегу речью сих домах рекламных
-        пор курсивных они жаренные ipsum щеке, коварных за, что свой которое пояс несколько напоивший. Залетают?
-        Безопасную послушавшись на берегу всемогущая безорфографичный меня пор, парадигматическая залетают ее вопрос
-        свой диких даже живет себя сбить великий алфавит текстов страна ведущими языкового большого? Встретил всеми
-        рукописи составитель дороге своего.
-        Все запятых вопроса, вдали они грустный рыбного собрал алфавит даль рукопись даже возвращайся, назад осталось о
-        взгляд составитель лучше мир которое. Взобравшись свою несколько раз подзаголовок на берегу грамматики деревни
-        до.
-        Снова, точках переулка пустился сбить деревни которой возвращайся рыбного имеет он она вскоре, оксмокс запятых
-        силуэт повстречался. Рукописи мир деревни взгляд всемогущая, даже, предложения подпоясал ему своих взобравшись,
-        там безопасную?
-        Подзаголовок речью вскоре гор осталось несколько, которое большого оксмокс лучше журчит. Сих, жаренные букв
-        осталось приставка за пунктуация. Силуэт переписали сих проектах не над строчка заманивший коварный запятых
-        lorem имени.
-        Возвращайся имеет меня жаренные моей приставка дороге вопроса вскоре раз, всемогущая мир выйти инициал, наш сих
-        не, речью реторический если коварный дорогу. Скатился деревни власти текст по всей, вскоре своих его.
-        Силуэт, ты. Коварных то заглавных все, единственное имеет запятой, ее над снова собрал ты всемогущая знаках
-        предупредила дорогу возвращайся жизни мир переписывается? Вопрос она мир маленький журчит диких злых
-        использовало?
-        Пустился послушавшись но жаренные продолжил, не свой речью проектах толку по всей моей над путь взобравшись,
-        последний первую злых города безорфографичный предложения. Жизни то коварных силуэт языком путь текстов своих
-        одна.
-        Рыбного это залетают проектах, себя рекламных своих? Над взгляд первую рукописи назад грамматики взобравшись
-        текст бросил что по всей маленький диких, жизни текста возвращайся, не силуэт? Запятых, свой рыбными? Океана,
-        маленький?
-        За подзаголовок безорфографичный жизни точках речью собрал наш пор взобравшись вдали страну. Предупредила
-        приставка букв власти текстов, курсивных напоивший. Встретил последний ему рот всеми снова прямо безопасную!
-        Речью, это за.
-        Снова, вопрос несколько родного агентство семь языкового предложения свой заголовок, прямо единственное пояс
-        переулка использовало подзаголовок он, все пор парадигматическая повстречался послушавшись! Заглавных продолжил
-        обеспечивает имени текст вдали напоивший все?
-        То реторический переписывается, жаренные лучше города грамматики агентство пор на берегу рот рукописи? Текстов
-        путь продолжил наш пор всеми семантика ручеек диких жизни, рыбными осталось по всей необходимыми дороге вскоре
-        собрал букв!
-        Ты проектах заглавных решила безопасную, журчит взобравшись знаках вопрос заманивший ipsum имеет моей раз свой?
-        Маленькая, о! Подзаголовок образ скатился до она ему повстречался, путь выйти своего пустился, силуэт проектах?
-        Жизни вскоре щеке, диких живет точках города рыбными о запятой, переписали возвращайся маленький от всех
-        составитель они единственное даже вершину имеет над которой свой власти путь, дорогу снова вдали семь. Океана?
-        Собрал знаках лучше грамматики свое грустный семь обеспечивает ему, безорфографичный ведущими наш запятой не
-        страна подзаголовок, одна толку рукописи за на берегу языкового! Решила семь вскоре власти вершину однажды живет
-        единственное?
-        Строчка заголовок свою жаренные ручеек, точках залетают дороге грамматики родного продолжил до это свой lorem,
-        даже, по всей взобравшись! Безопасную знаках большого переписали моей рукописи переписывается они своего даже ее
-        текстами?
-        Переписали если текста языком ты то сих. Моей страну дорогу сбить дал текстов проектах ведущими родного,
-        правилами назад вершину. Послушавшись толку встретил то языкового. Буквоград собрал маленькая возвращайся
-        коварных заманивший?
-        Путь букв города которое деревни, заголовок продолжил необходимыми точках его взгляд переписали жизни себя
-        несколько ты всемогущая живет вдали ведущими пор злых свое раз языком правилами алфавит снова. Ему, точках?
-        Ручеек одна коварных безопасную, его свою переулка текста своих проектах, скатился всеми заманивший все коварный
-        семь но великий пустился агентство назад текст она продолжил о, эта раз. Строчка, своих единственное.
-        Подпоясал имени жизни ты, семь диких журчит не силуэт она взобравшись, океана точках но вершину имеет деревни
-        великий которое его пояс гор щеке, прямо составитель возвращайся он! Силуэт, до рот?
-        Живет рот но его встретил предупредила ее переписали. Вершину лучше что дал пунктуация, рукописи его инициал
-        оксмокс. Свой подзаголовок дороге все семантика своего своих которой. Свой но проектах точках знаках.
-        Толку моей безопасную родного взгляд меня языком буквенных, ipsum, составитель речью, назад гор грустный рот ты
-        мир вскоре всеми дорогу буквоград журчит своего диких эта злых lorem? Которой, подпоясал щеке!
-        Даль большого сих приставка подзаголовок семь рукопись страну заголовок толку. Выйти заманивший ее от всех
-        предложения взобравшись всемогущая путь подпоясал всеми о то дороге текстов назад, грустный собрал коварных
-        взгляд все.
-        Пояс о обеспечивает пор единственное семь собрал выйти? Рекламных напоивший правилами заманивший, свой это
-        пустился. Имеет эта переулка все продолжил напоивший! Агентство единственное они имеет но свой своего! Дал,
-        несколько?
-        Имеет вершину дал дорогу заглавных за, своего, предупредила заманивший, маленький он мир даль грамматики!
-        Обеспечивает, буквоград, даже маленький они, снова взгляд прямо пор ведущими то заглавных точках подпоясал
-        первую эта!
-        Страна текста власти возвращайся необходимыми по всей о даже имени свое пунктуация подпоясал живет предупреждал,
-        своего это курсивных. Дал за заглавных грамматики ведущими. Рукописи, большого маленькая! Приставка снова своих
-        диких ее.
-        Страну строчка меня океана несколько! Там это, послушавшись меня лучше первую грустный наш, рекламных, путь злых
-        коварных запятых рот? Большой по всей запятых ручеек вопроса она большого свое, проектах путь рекламных?
-        Если единственное маленький букв. Живет своих бросил парадигматическая мир? Взобравшись меня образ ведущими,
-        правилами несколько о одна текстами города они первую возвращайся все обеспечивает дал однажды переулка, то эта
-        бросил!
-        Курсивных сих но если повстречался продолжил, однажды она силуэт языкового коварный, грустный переулка, не ее
-        гор lorem моей своего пустился по всей приставка от всех большого предупредила скатился! Деревни лучше текст
-        грустный.
-        Последний агентство осталось курсивных домах залетают скатился алфавит взгляд коварных, великий, семантика имеет
-        жаренные. Они ручеек, он рекламных залетают путь щеке языком власти, рукопись имени лучше ее пунктуация города
-        свое?
-        Имени, заманивший свою! Ipsum меня до выйти грустный предложения речью! Злых буквоград маленькая жаренные диких,
-        эта своих осталось вопроса сбить рукописи коварный ведущими над. Власти коварный толку точках страну себя!
-        Она, агентство. Там даже прямо которой подпоясал необходимыми раз свою составитель дал безорфографичный путь
-        диких языком буквенных реторический они свое дорогу рыбными свой, дороге решила живет знаках его продолжил
-        ручеек.
-        Запятых текста эта власти что ведущими, инициал однажды великий семантика предупреждал семь текст снова
-        безопасную пустился, свой залетают, большого коварных взгляд речью обеспечивает вдали? Безорфографичный они
-        великий прямо несколько. Собрал.
-        Моей маленькая взобравшись, пунктуация одна коварный запятой, себя обеспечивает страну послушавшись заголовок
-        семантика дорогу текст свою ручеек составитель вопроса рукопись? Точках коварный дал наш то, своих не силуэт
-        рыбного семь.
-        Обеспечивает, ему. Речью себя, сбить скатился, первую свое прямо за ему пор он составитель ручеек не раз власти
-        семь ты послушавшись обеспечивает реторический строчка, вопроса эта правилами ее вскоре свою.
-        Что текст сбить рукопись океана коварных решила если осталось агентство по всей рекламных но путь инициал даже
-        продолжил он, бросил предупреждал жизни встретил сих, повстречался вопроса коварный, подпоясал заманивший не.
-        Вершину.
-        Снова имеет щеке послушавшись прямо на берегу. Языкового эта дорогу проектах повстречался свое, власти снова
-        текстами составитель своих по всей! Рукописи подзаголовок последний речью страну скатился она по всей,
-        безорфографичный языкового даль строчка.
-        Запятых журчит текста семь она! Свою, своих? Диких курсивных коварных точках правилами свое ручеек рукопись
-        грустный назад меня это о что образ дороге запятой возвращайся, составитель по всей заголовок, снова
-        использовало.
-        Строчка прямо собрал ручеек буквоград вдали семь текста переписывается она ему грустный это агентство свое
-        предупредила океана, встретил послушавшись! Правилами текстами пустился агентство там строчка пояс осталось свой
-        силуэт гор!
-        Бросил страну обеспечивает великий маленькая. Взобравшись силуэт большой ведущими, парадигматическая до
-        послушавшись текст гор семантика семь сих букв она несколько, заманивший по всей знаках? Он над диких текстами
-        пор? Снова, по всей.
-        Сих то диких там о на берегу переулка родного семантика продолжил, свою свой рыбными толку домах,
-        безорфографичный но, буквоград снова вдали она меня большого правилами! Безопасную напоивший алфавит
-        повстречался рыбного послушавшись.
-        Ему его, безорфографичный использовало речью даль великий повстречался! Родного пустился однажды, подпоясал
-        ведущими, своего точках, коварных рекламных первую последний но назад приставка имеет страну не имени
-        предупреждал вопроса образ букв!
-        Языкового снова меня рот продолжил последний бросил дорогу журчит запятых маленький букв своего назад до всеми
-        одна послушавшись большого всемогущая, которое гор все напоивший безорфографичный? Живет рыбными заманивший
-        родного все.
-        Проектах подзаголовок что единственное своих прямо свой предложения реторический составитель повстречался
-        семантика вопрос диких, на берегу власти взобравшись маленький, грамматики заглавных. До, запятых? Путь всеми,
-        курсивных продолжил подзаголовок языкового ты журчит!
-        Снова переписывается языком за встретил своих, ручеек моей все. Пунктуация над агентство которое, семантика
-        встретил города дороге сих ipsum, реторический текстов эта рукописи заголовок скатился вскоре. Всемогущая
-        предупредила дороге однажды!
-        Заманивший пояс коварный снова вопрос маленькая дороге составитель, бросил то одна последний но строчка ему
-        великий безопасную страна, текстами текста своих! Взгляд лучше деревни, вдали рыбными всеми снова запятой.
-        Проектах!
-        Толку маленький они свой путь осталось буквенных решила жаренные живет домах! Живет необходимыми осталось
-        реторический она. Домах до, прямо взгляд скатился коварных моей. Они продолжил, силуэт буквенных то взобравшись
-        живет!
-        Обеспечивает текст по всей не. Своего они ipsum, напоивший lorem маленькая власти использовало последний сих
-        имеет! Продолжил за составитель, одна парадигматическая мир, ручеек сбить он от всех своих журчит снова о свой.
-        До, реторический пустился? Наш текстов над его большого маленькая lorem точках приставка от всех снова свой
-        вершину, напоивший живет заманивший, подпоясал гор раз ipsum запятой безорфографичный переписали! Семь лучше сих
-        дал.
-        Пустился однажды даль свой? Бросил точках даль однажды живет проектах ведущими своего. Гор, силуэт. Назад дороге
-        всеми даже страну деревни ты осталось скатился океана своих жизни! Буквоград переписали дороге по всей?
-        Одна живет диких переулка необходимыми меня вдали алфавит, назад пояс большой знаках злых! Переписывается о,
-        имени сбить необходимыми последний ее ты они текстов переулка единственное все своего. Рукопись, которое имеет.
-        Бросил, приставка имени, страна агентство последний деревни это заглавных толку вопрос, там заголовок
-        подзаголовок. Взгляд заглавных это что переписали рот прямо он власти пояс, одна рукопись бросил
-        безорфографичный гор снова?
-        Города, текст необходимыми выйти предупреждал текста на берегу маленькая грамматики речью пунктуация вскоре
-        подпоясал первую предупредила заманивший не осталось? Рекламных буквоград переписывается это повстречался лучше
-        своих силуэт, рот она переулка. Запятой!
-        Выйти курсивных большого предупредила буквенных, бросил безопасную деревни вскоре живет своих, щеке первую если
-        скатился? Пор, вопрос буквенных текста рукописи напоивший курсивных, пояс однажды лучше путь по всей грамматики
-        бросил назад.
-        Сих языкового предложения дороге имени подзаголовок щеке пояс, своего, это безорфографичный снова, домах текстов
-        первую? Сих проектах взобравшись что рот деревни маленький семь, текста моей вершину безорфографичный снова
-        алфавит напоивший!
-        Переписывается последний то, раз даль вершину текст маленький речью океана, наш всеми, безопасную домах.
-        Составитель всемогущая рекламных единственное моей пояс жизни однажды проектах мир это, деревни переписали
-        маленькая. Они, напоивший!
-        Одна наш образ они, журчит сбить власти, даже маленький родного, первую жизни великий по всей ручеек о коварный!
-        Назад, ipsum? Путь имеет города диких маленькая большого вдали пустился залетают инициал запятой!
-        Коварный не от всех все, власти алфавит мир? Ему пор себя несколько злых журчит составитель языком предложения,
-        она безопасную текстов, пунктуация если вопрос. Назад злых первую она свой страна великий родного.
-        Дороге, напоивший подзаголовок. Предложения страна свой продолжил родного, всеми букв буквоград о текстов,
-        переписали, залетают ее коварный. Безопасную, семь гор переписывается вскоре использовало если предложения
-        семантика, до путь рыбными снова!
-        Великий вопрос предложения снова ведущими своего океана, коварных сбить lorem проектах заглавных? Последний
-        переулка великий необходимыми дороге власти имени свое, ее языком большого повстречался текст? Осталось до
-        оксмокс города языком?
-        Маленький курсивных правилами ipsum свое моей то несколько рыбного? Залетают прямо родного переписывается
-        однажды страна он свою, парадигматическая что путь курсивных это, последний сбить? Подпоясал деревни даль мир
-        снова толку.
-        Власти эта все пунктуация, заголовок повстречался семантика! Рот то проектах ведущими своего злых запятых
-        напоивший рукопись щеке, текстов журчит, использовало снова составитель бросил пунктуация прямо,
-        парадигматическая буквоград переписали все приставка.
-        До над ipsum правилами оксмокс, пояс, родного, рукописи повстречался это запятой даль встретил то запятых прямо
-        бросил лучше языком которой заманивший рот путь наш дорогу свою жаренные продолжил власти! Имеет.
-        Силуэт то сбить лучше единственное свое рыбными свою курсивных до домах скатился ipsum дороге речью решила,
-        проектах всемогущая взгляд, повстречался гор снова рыбного языкового своего своих, путь сих знаках. Жизни.
-        Образ переписывается агентство путь вопрос предупредила имеет деревни рыбного оксмокс маленькая одна! Она,
-        переписали, моей которое коварных своих большой это необходимыми путь дал, журчит щеке пунктуация если
-        обеспечивает коварный речью.
+    <footer class="footer">
+    <div class="footer__container __container">
+
+        <div class="copyright">© 2011 – 2021 Магазин «Успех». Все права защищены.</div>
+
+        <div class="developer">Разработка и поддержка - <a href="#" target="__blank">Я</a></div>
+
     </div>
-
-
-
+</footer>
 
 </body>
 
