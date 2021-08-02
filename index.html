@@ -28,13 +28,13 @@
 
 
 <!-- SCRIPTS -->
-<script src="scripts/main.min.js" defer></script>
+<script src="scripts/main.min.js" type="module" defer></script>
 
 </head>
 
 <body class="main-page__body">
-
-        <aside class="sidebar" id="sidebar" role="menu">
+    <div class="wrapper">
+            <aside class="sidebar" id="sidebar" role="menu">
 
         <div class="sidebar__close">
             <button class="close" id="sidebar-close" aria-controls="sidebar"
@@ -57,28 +57,39 @@
                     </div>
                 </div>
 
-                <div class="search">
+                <div class="widgets" id="sidebar__widgets">
+
+                    <!--  собираем списки виджетов -->
+
+                    <ul class="widget">
+                        <li class="widgets__item">
+                            <div class="search">
     <form>
         <input type="search" placeholder="Поиск" aria-label="Поиск">
         <button type="submit"></button>
     </form>
 </div>
+                        </li>
+                    </ul>
 
-                <ul class="widgets widgets--cols-2">
+                    <ul class="widget">
+                        <li class="widget">
+                            <a href="#" class="cart">
+                                <picture><source srcset="icons/shopping-bag.svg" type="image/webp"><img src="icons/shopping-bag.svg" alt=""></picture>
+                                <span>Корзина</span>
+                            </a>
+                        </li>
 
-                    <li class="widgets__item">
-                        <a href="#" class="cart">
-                            <picture><source srcset="icons/shopping-bag.svg" type="image/webp"><img src="icons/shopping-bag.svg" alt=""></picture>
-                            <span>Корзина</span>
-                        </a>
-                    </li>
-                    <li class="widgets__item">
-                        <a href="#" class="favorites">
-                            <picture><source srcset="icons/star.svg" type="image/webp"><img src="icons/star.svg" alt=""></picture>
-                            <span>Понравилось</span>
-                        </a>
-                    </li>
-                </ul>
+                        <li class="widget">
+                            <a href="#" class="favorites">
+                                <picture><source srcset="icons/star.svg" type="image/webp"><img src="icons/star.svg" alt=""></picture>
+                                <span>Понравилось</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
 
             </div>
             <div class="sidebar__body">
@@ -87,7 +98,9 @@
 
                     <div class="catalog">
                         <ul class="catalog--list">
-                            <li><input type="checkbox" id="sub-one" class="submenu-toggle">
+
+                            <li>
+                                <input type="checkbox" id="sub-one" class="submenu-toggle">
                                 <label class="submenu-label" for="sub-one">
                                     <span> &#8250;</span>Семена</label>
                                 <ul class="menu-sub">
@@ -164,14 +177,14 @@
 
     </aside>
 
-    <section class="hero">
+        <section class="hero">
 
     <header class="header">
     <div class="__container">
 
-        <div class="header__head">
-    <ul class="widgets">
-        <li class="widgets__item widgets__item--right">
+        <div class="header__head header-head">
+    <ul class="header-head__widgets widgets">
+        <li class="widgets__item">
             <div class="socials">
     <ul class="socials__list ">
         <li class="socials__item">
@@ -184,29 +197,14 @@
             <a href="https://vk.com/" class="socials__item--vk"></a>
         </li>
     </ul>
-</div>
-        </li>
+</div></li>
     </ul>
 </div>
 
 
         <div class="header__body header-body">
 
-    <div class="header-body__burger">
-        <button class="burger-sidebar" id="burger-sidebar" aria-controls="sidebar" aria-label="Показать сайдбар">
 
-    <span>
-        <svg class="burger" viewBox="0 0 100 100">
-    <path class=" top"
-        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-    <path class=" middle" d="m 30,50 h 40" />
-    <path class=" bottom"
-        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-</svg>
-    </span>
-
-</button>
-    </div>
 
     <div class="header-body__logo">
         <a href="/" class="logo" aria-label="Ссылка на главную страницу" title="Вернуться на главную страницу">
@@ -217,8 +215,10 @@
 </a>
     </div>
 
+
+
     <div class="header-body__tools">
-        <ul class="widgets">
+        <ul data-da="#sidebar__widgets, 1024, first" class="header-body__widgets widgets">
 
             <li class="widgets__item">
                 <a class="phone" href="tel:+79898552277">8 989 855 22 77</a>
@@ -232,12 +232,31 @@
 
         </ul>
 
-        <nav class="navbar">
-    <ul class="navbar__list">
+        <button class="burger-sidebar" id="burger-sidebar" aria-controls="sidebar"
+    aria-label="Открыть панель навигации по каталогу">
 
-        <li class="navbar__item">
-            <a class="navbar__link" aria-current="page" href="#">КАТАЛОГ</a>
-        </li>
+    <i class="burger-sidebar__icon">
+        <svg class="burger" viewBox="0 0 100 100">
+    <path class=" top"
+        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+    <path class=" middle" d="m 30,50 h 40" />
+    <path class=" bottom"
+        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+</svg>
+    </i>
+
+    <span>каталог</span>
+
+</button>
+
+        <nav class="navbar">
+
+    <input class="navbar__checkbox" type="checkbox" name="navbar" id="navbar">
+    <label class="navbar__label" for="navbar">
+        Покупателям
+    </label>
+
+    <ul class="navbar__list">
 
         <li class="navbar__item">
             <a class="navbar__link" href="#">О КОМПАНИИ</a>
@@ -254,6 +273,7 @@
         <li class="navbar__item">
             <a class="navbar__link" href="#">ОПЛАТА</a>
         </li>
+
     </ul>
 
 </nav>
@@ -263,21 +283,21 @@
 </div>
 
 
-        <div class="header__footer">
-    <ul class="widgets">
+        <div class="header__footer header-footer">
 
-        <li class="widgets__item widgets__item--right">
+    <ul class="header-footer__widgets widgets">
+
+        <li class="widgets__item">
             <div class="search">
-                <div class="search">
     <form>
         <input type="search" placeholder="Поиск" aria-label="Поиск">
         <button type="submit"></button>
     </form>
 </div>
-
-            </div>
         </li>
     </ul>
+
+
 </div>
 
     </div>
@@ -287,8 +307,9 @@
         <h1>Успешное земледелие</h1>
     </div>
 </section>
+        <main>
 
-    <section class="section" id="catalog">
+            <section class="section" id="catalog">
     <div class="section__container __container">
         <h2 class="section__title">Товары и услуги</h2>
 
@@ -298,9 +319,7 @@
 
                     <li class="category__item">
                         <!-- seeds -->
-                        <input class="category__checkbox" type="checkbox" id="seeds">
-
-                        <label class="category__label" for="seeds">
+                        <a href="#" class="category__link" for="seeds">
                             <picture>
                                 <source media="(min-width: 2559px)"
                                     srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
@@ -318,486 +337,11 @@
                                 <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
                             </picture>
                             <span>Семена</span>
-                        </label>
-
-                        <ul class="catalog--grid category__sub-category">
-                            <li class="category__come-back">
-                                <label class="category__label" for="seeds">
-
-                                    <picture>
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
-                                    </picture>
-
-                                    <span>назад</span>
-                                </label>
-                            </li>
-
-                            <li>
-                                <!-- капуста -->
-                                <input class="category__checkbox" type="checkbox" id="cabbage">
-
-                                <label class="category__label" for="cabbage">
-                                    <picture>
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/seeds/seeds.h245.jpg" alt="капуста">
-                                    </picture>
-                                    <span>капуста</span>
-                                </label>
-
-                                <ul class="catalog--grid category__sub-category">
-                                    <li class="category__come-back">
-                                        <label class="category__label" for="cabbage">
-
-                                            <picture>
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
-                                                    type="image/webp">
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <source
-                                                    srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
-                                                    type="image/webp">
-                                                <source
-                                                    srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
-                                            </picture>
-
-                                            <span>назад</span>
-                                        </label>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="category__label">
-                                            <picture>
-
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                                    type="image/webp">
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                                    type="image/webp">
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                            </picture>
-                                            <span>Краснокачанная</span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="category__label">
-                                            <picture>
-
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                                    type="image/webp">
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                                    type="image/webp">
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                            </picture>
-                                            <span>белокачанная</span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="category__label">
-                                            <picture>
-
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                                    type="image/webp">
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                                    type="image/webp">
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                            </picture>
-                                            <span>пекинская</span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="category__label">
-                                            <picture>
-
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                                    type="image/webp">
-                                                <source media="(min-width: 2559px)"
-                                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                                    type="image/webp">
-                                                <source
-                                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                                    type="image/jpg">
-
-                                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                            </picture>
-                                            <span>цветная</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>томат</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>Огурец</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>перец</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>зелень</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>баклажаны</span>
-                                </a>
-                            </li>
-                        </ul>
-
+                        </a>
                     </li>
                     <li class="category__item">
                         <!-- fertilizer -->
-                        <a href="#" class="category__label">
+                        <a href="#" class="category__link">
                             <picture>
 
                                 <source media="(min-width: 2559px)"
@@ -822,7 +366,7 @@
                     </li>
                     <li class="category__item">
                         <!-- chemistry -->
-                        <a href=" #" class="category__label">
+                        <a href=" #" class="category__link">
                             <picture>
 
                                 <source media="(min-width: 2559px)"
@@ -846,9 +390,8 @@
                     </li>
                     <li class="category__item">
                         <!-- membrane -->
-                        <input class="category__checkbox" type="checkbox" id="membrane">
 
-                        <label class="category__label" for="membrane">
+                        <a href="#" class="category__link" for="membrane">
                             <picture>
 
                                 <source media="(min-width: 2559px)"
@@ -868,164 +411,12 @@
                                 <img src="img/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
                             </picture>
                             <span>укрывной материал</span>
-                        </label>
-
-                        <ul class="catalog--grid category__sub-category">
-                            <li class="category__come-back">
-                                <label class="category__label" for="membrane">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/membrane/membrane.h352.webp 1x, img/catalog/membrane/membrane@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/membrane/membrane.h352.jpg 1x, img/catalog/membrane/membrane@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/membrane/membrane.h245.webp 1x,img/catalog/membrane/membrane.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/membrane/membrane.h245.jpg 1x,img/catalog/membrane/membrane.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
-                                    </picture>
-                                    <span>назад</span>
-                                </label>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>плёнка</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>картонка</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>газетка</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>салфетка</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="category__label">
-                                    <picture>
-
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                            type="image/webp">
-                                        <source media="(min-width: 2559px)"
-                                            srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                            type="image/jpg">
-
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                            type="image/webp">
-                                        <source
-                                            srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                            type="image/jpg">
-
-                                        <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
-
-                                    </picture>
-                                    <span>и тд</span>
-                                </a>
-                            </li>
-
-                        </ul>
+                        </a>
 
                     </li>
                     <li class="category__item">
                         <!-- tools -->
-                        <a href=" #" class="category__label">
+                        <a href=" #" class="category__link">
                             <picture>
 
                                 <source media="(min-width: 2559px)"
@@ -1061,7 +452,9 @@
 
 </section>
 
-    <footer class="footer">
+        </main>
+
+        <footer class="footer">
     <div class="footer__container __container">
 
         <div class="copyright">© 2011 – 2021 Магазин «Успех». Все права защищены.</div>
@@ -1070,6 +463,8 @@
 
     </div>
 </footer>
+    </div>
+
 
 </body>
 
