@@ -34,148 +34,204 @@
 
 <body class="main-page__body">
     <div class="wrapper">
-            <aside class="sidebar" id="sidebar" role="menu">
+        <aside class="sidebar" id="sidebar" role="menu">
 
-        <div class="sidebar__close">
-            <button class="close" id="sidebar-close" aria-controls="sidebar"
-                aria-label="Свернуть панель навигации по каталогу" title="Свернуть панель навигации по каталогу">
-                &#10008; </button>
+    <div class="sidebar__close">
+        <button class="close" id="sidebar-close" aria-controls="sidebar"
+            aria-label="Свернуть панель навигации по каталогу" title="Свернуть панель навигации по каталогу">+</button>
+    </div>
+
+    <nav class="mobile-nav">
+        <div class="mobile-nav__container __container">
+            <ul class="mobile-nav__list">
+
+                <li class="mobile-nav__item">
+                    <button data-target="sidebar__page-navigation">
+                        <picture><source srcset="icons/logo_1.webp" type="image/webp"><img src="icons/logo_1.png" alt="Логотип"></picture>
+                        <span>главная</span>
+                    </button>
+                </li>
+
+                <li class="mobile-nav__item">
+                    <button data-target="sidebar__catalog">
+                        <picture><source srcset="icons/catalog.webp" type="image/webp"><img src="icons/catalog.png" alt="каталог"></picture>
+                        <span>каталог</span>
+                    </button>
+                </li>
+
+                <li class="mobile-nav__item">
+                    <button data-target="sidebar__feedback">
+                        <picture><source srcset="icons/phone_icon.webp" type="image/webp"><img src="icons/phone_icon.png" alt="позвонить"></picture>
+                        <span>позвонить</span>
+                    </button>
+                </li>
+
+                <li class="mobile-nav__item">
+                    <button>
+                        <picture><source srcset="icons/shopping-bag.webp" type="image/webp"><img src="icons/shopping-bag.jpg" alt="корзина"></picture>
+                        <span>корзина</span>
+                    </button>
+                </li>
+
+                <li class="mobile-nav__item">
+                    <button>
+                        <picture><source srcset="icons/search.webp" type="image/webp"><img src="icons/search.png" alt="корзина"></picture>
+                        <span>найти</span>
+                    </button>
+                </li>
+
+            </ul>
         </div>
+    </nav>
 
-        <div class="sidebar__container">
+    <div class="sidebar__container">
 
-            <div class="sidebar__header">
+        <div class="sidebar__body">
+
+            <div class="sidebar__page-navigation hidden">
                 <div class="profile">
-                    <button>Зарегистрироваться</button>
-                    <button>Войти</button>
-
-                    <div class="user">
-                        <div class="user-name">
-                            Рандомный Человек
-                            <span>Успешный земледелец</span>
-                        </div>
+                    <div class="profile__avatar">
+                        <picture><source srcset="img/user_placeholder.webp" type="image/webp"><img src="img/user_placeholder.jpg" alt="ваш аватар"></picture>
+                    </div>
+                    <div class="profile__info user">
+                        <span class="user__name">Лагутин Виталий</span>
+                        <span class="user__status">успешный покупатель</span>
+                        <button class="btn btn--white"><span>Зарегистрироваться</span></button>
+                        <button class="btn btn--red"><span>войти</span></button>
                     </div>
                 </div>
 
-                <div class="widgets" id="sidebar__widgets">
+                <nav class="navbar">
 
+    <!-- <input class="navbar__checkbox" type="checkbox" name="navbar" id="navbar">
+    <label class="navbar__label" for="navbar">
+        Покупателям
+    </label> -->
 
+    <ul class="navbar__list">
 
-                    <ul class="widget">
-                        <li class="widgets__item">
-                            <div class="search">
+        <li class="navbar__item">
+            <a class="navbar__link" href="#">О КОМПАНИИ</a>
+        </li>
+
+        <li class="navbar__item">
+            <a class="navbar__link" href="#">КОНТАКТЫ</a>
+        </li>
+
+        <li class="navbar__item">
+            <a class="navbar__link" href="#">ДОСТАВКА</a>
+        </li>
+
+        <li class="navbar__item">
+            <a class="navbar__link" href="#">ОПЛАТА</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+            </div>
+
+            <div class="sidebar__catalog hidden">
+                <div class="search">
     <form>
         <input type="search" placeholder="Поиск" aria-label="Поиск">
         <button type="submit"></button>
     </form>
 </div>
-                        </li>
-                    </ul>
+                <h3 class="catalog__title">Каталог</h3>
+                <ul class="catalog--list">
 
-                    <ul class="widget">
-                        <li class="widget">
-                            <a href="#" class="cart">
-                                <picture><source srcset="icons/shopping-bag.svg" type="image/webp"><img src="icons/shopping-bag.svg" alt=""></picture>
-                                <span>Корзина</span>
-                            </a>
-                        </li>
-
-                        <li class="widget">
-                            <a href="#" class="favorites">
-                                <picture><source srcset="icons/star.svg" type="image/webp"><img src="icons/star.svg" alt=""></picture>
-                                <span>Понравилось</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
-
-            </div>
-            <!-- <div class="sidebar__body">
-                <h3>Каталог</h3>
-                <div class="sidebar__catalog">
-
-                    <div class="catalog">
-                        <ul class="catalog--list">
-
+                    <li>
+                        <span> семена</span>
+                        <ul>
                             <li>
-                                <input type="checkbox" id="sub-one" class="submenu-toggle">
-                                <label class="submenu-label" for="sub-one">
-                                    <span> &#8250;</span>Семена</label>
-                                <ul class="menu-sub">
-                                    <li class="menu-sub-title">
-                                        <label class="submenu-label" for="sub-one"> <span> &#8249;</span> Назад</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="sub-tree" class="submenu-toggle">
-                                        <label class="submenu-label" for="sub-tree"><span> &#8250;</span>Капуста</label>
-                                        <ul class="menu-sub">
-                                            <li class="menu-sub-title">
-                                                <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
-                                                    Назад</label>
-                                            </li>
-                                            <li><a href="#">белокачанная</a></li>
-                                            <li><a href="#">краснокачанная</a></li>
-                                            <li><a href="#">цветная</a></li>
-                                            <li><a href="#">пекинская</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="sub-tree" class="submenu-toggle">
-                                        <label class="submenu-label" for="sub-tree"><span> &#8250;</span>перец</label>
-                                        <ul class="menu-sub">
-                                            <li class="menu-sub-title">
-                                                <label class="submenu-label" for="sub-tree"> <span> &#8249;</span>
-                                                    Назад</label>
-                                            </li>
-                                            <li><a href="#">острый</a></li>
-                                            <li><a href="#">сладкий</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">томаты</a></li>
-                                    <li><a href="#">арбуз</a></li>
-                                    <li><a href="#">дыня</a></li>
-                                    <li><a href="#">баклажаны</a></li>
-                                    <li><a href="#">фасоль</a></li>
-                                    <li><a href="#">кабачки</a></li>
-                                    <li><a href="#">кукуруза</a></li>
-                                    <li><a href="#">лук</a></li>
-                                    <li><a href="#">Огурец</a></li>
-                                    <li><a href="#">салат</a></li>
-                                    <li><a href="#">зелень</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">УДОБРЕНИЯ</a></li>
-                            <li><a href="#">Средства защиты</a></li>
-                            <li>
-                                <input type="checkbox" id="sub-two" class="submenu-toggle">
-                                <label class="submenu-label" for="sub-two"><span> &#8250;</span>укрывной
-                                    материал</label>
-                                <ul class="menu-sub">
-                                    <li class="menu-sub-title">
-                                        <label class="submenu-label" for="sub-two"> <span> &#8249;</span> Назад</label>
-                                    </li>
-                                    <li><a href="#">Агроспан</a></li>
-                                    <li><a href="#">Мульчирующая пленка</a></li>
-                                    <li><a href="#">тепличная пленка</a></li>
-                                    <li><a href="#">сетка</a></li>
+                                <span>Капуста</span>
+                                <ul>
+                                    <li><a href="#">белокачанная</a></li>
+                                    <li><a href="#">краснокачанная</a></li>
+                                    <li><a href="#">цветная</a></li>
+                                    <li><a href="#">пекинская</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Инструмент</a>
+                                <span>перец</span>
+                                <ul>
+                                    <li><a href="#">острый</a></li>
+                                    <li><a href="#">сладкий</a></li>
+                                </ul>
                             </li>
-
+                            <li><a href="#">томаты</a></li>
+                            <li><a href="#">арбуз</a></li>
+                            <li><a href="#">дыня</a></li>
+                            <li><a href="#">баклажаны</a></li>
+                            <li><a href="#">фасоль</a></li>
+                            <li><a href="#">кабачки</a></li>
+                            <li><a href="#">кукуруза</a></li>
+                            <li><a href="#">лук</a></li>
+                            <li><a href="#">Огурец</a></li>
+                            <li><a href="#">салат</a></li>
+                            <li><a href="#">зелень</a></li>
                         </ul>
+                    </li>
+                    <li><a href="#">УДОБРЕНИЯ</a></li>
+                    <li><a href="#">Средства защиты</a></li>
+                    <li>
+                        <span>укрывной материал</span>
+                        <ul>
+                            <li><a href="#">Агроспан</a></li>
+                            <li><a href="#">Мульчирующая пленка</a></li>
+                            <li><a href="#">тепличная пленка</a></li>
+                            <li><a href="#">сетка</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Инструмент</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="sidebar__feedback hidden">
+                <div class="phone-contact">
+                    <div class="phone-contact__logo">
+                        <picture><source srcset="icons/logo_1.webp" type="image/webp"><img src="icons/logo_1.png" alt="магазин УСПЕХ"></picture>
                     </div>
 
+                    <div class="phone-contact__link">
+                        <div>Магазин УСПЕХ</div>
+                        <a class="phone phone--no-icon" href="tel:+79898552277">+7 (989) 855 22 77</a>
+                    </div>
                 </div>
-            </div> -->
+
+                <button class="btn btn--red feedback" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
+    <span>Заказать звонок</span>
+</button>
+                <div class="socials">
+    <ul class="socials__list ">
+        <li class="socials__item">
+            <a href="https://instagram.com/magazin_uspeh_kurganinsk" class="socials__item--insta"></a>
+        </li>
+        <li class="socials__item">
+            <a href="https://ok.ru/" class="socials__item--ok"></a>
+        </li>
+        <li class="socials__item">
+            <a href="https://vk.com/" class="socials__item--vk"></a>
+        </li>
+    </ul>
+</div>
+                <a class="phone phone--no-text phone--icon-pulse" href="tel:+79898552277">+7 (989) 855 22 77</a>
+            </div>
 
         </div>
 
-    </aside>
+
+    </div>
+
+
+
+
+</aside>
 
         <section class="hero">
 
@@ -232,9 +288,7 @@
 
         </ul>
 
-
-        <nav class="navbar">
-    <button class="btn btn--white" id="burger-sidebar" aria-controls="sidebar"
+        <button class="btn btn--white" id="burger-sidebar" aria-controls="sidebar"
     aria-label="Открыть панель навигации по каталогу">
 
     <i class="btn__icon">
@@ -251,10 +305,12 @@
 
 </button>
 
-    <input class="navbar__checkbox" type="checkbox" name="navbar" id="navbar">
+        <nav class="navbar">
+
+    <!-- <input class="navbar__checkbox" type="checkbox" name="navbar" id="navbar">
     <label class="navbar__label" for="navbar">
         Покупателям
-    </label>
+    </label> -->
 
     <ul class="navbar__list">
 
@@ -748,91 +804,6 @@
                 залетают великий букв несколько города.
             </div>
         </main>
-
-        <nav class="mobile-navigation">
-    <div class="__container">
-        <ul class="mobile-navigation__list">
-            <li class="mobile-navigation__item">
-                <a href="/">
-                    <picture>
-                        <source srcset="img/logo.webp" type="image/webp">
-                        <img src="img/logo.png" alt="Логотип магазина УСПЕХ">
-                    </picture>
-                    на главную
-                </a>
-            </li>
-
-            <li class="mobile-navigation__item"><button class="btn btn--white" id="burger-sidebar" aria-controls="sidebar"
-    aria-label="Открыть панель навигации по каталогу">
-
-    <i class="btn__icon">
-        <svg class="burger" viewBox="0 0 100 100">
-    <path class=" top"
-        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-    <path class=" middle" d="m 30,50 h 40" />
-    <path class=" bottom"
-        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-</svg>
-    </i>
-
-    <span>каталог</span>
-
-</button></li>
-            <li class="mobile-navigation__item"><a class="phone" href="tel:+79898552277">8 989 855 22 77</a></li>
-            <li class="mobile-navigation__item"><div class="search">
-    <form>
-        <input type="search" placeholder="Поиск" aria-label="Поиск">
-        <button type="submit"></button>
-    </form>
-</div></li>
-            <li class="mobile-navigation__item"><nav class="navbar">
-    <button class="btn btn--white" id="burger-sidebar" aria-controls="sidebar"
-    aria-label="Открыть панель навигации по каталогу">
-
-    <i class="btn__icon">
-        <svg class="burger" viewBox="0 0 100 100">
-    <path class=" top"
-        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-    <path class=" middle" d="m 30,50 h 40" />
-    <path class=" bottom"
-        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-</svg>
-    </i>
-
-    <span>каталог</span>
-
-</button>
-
-    <input class="navbar__checkbox" type="checkbox" name="navbar" id="navbar">
-    <label class="navbar__label" for="navbar">
-        Покупателям
-    </label>
-
-    <ul class="navbar__list">
-
-        <li class="navbar__item">
-            <a class="navbar__link" href="#">О КОМПАНИИ</a>
-        </li>
-
-        <li class="navbar__item">
-            <a class="navbar__link" href="#">КОНТАКТЫ</a>
-        </li>
-
-        <li class="navbar__item">
-            <a class="navbar__link" href="#">ДОСТАВКА</a>
-        </li>
-
-        <li class="navbar__item">
-            <a class="navbar__link" href="#">ОПЛАТА</a>
-        </li>
-
-    </ul>
-
-</nav></li>
-        </ul>
-    </div>
-
-</nav>
 
         <footer class="footer">
     <div class="footer__container __container">
