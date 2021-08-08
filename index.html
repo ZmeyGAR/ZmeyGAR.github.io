@@ -38,7 +38,8 @@
 
     <div class="sidebar__close">
         <button class="close" id="sidebar-close" aria-controls="sidebar"
-            aria-label="Свернуть панель навигации по каталогу" title="Свернуть панель навигации по каталогу">+</button>
+            aria-label="Свернуть панель навигации по каталогу" title="Свернуть панель навигации по каталогу">
+            <span class="close__icon"></span></button>
     </div>
 
     <nav class="mobile-nav">
@@ -74,9 +75,9 @@
                 </li>
 
                 <li class="mobile-nav__item">
-                    <button>
-                        <picture><source srcset="icons/search.webp" type="image/webp"><img src="icons/search.png" alt="корзина"></picture>
-                        <span>найти</span>
+                    <button data-target="sidebar__profile">
+                        <picture><source srcset="icons/profile_icon.webp" type="image/webp"><img src="icons/profile_icon.png" alt="профиль"></picture>
+                        <span>профиль</span>
                     </button>
                 </li>
 
@@ -89,17 +90,6 @@
         <div class="sidebar__body">
 
             <div class="sidebar__page-navigation hidden">
-                <div class="profile">
-                    <div class="profile__avatar">
-                        <picture><source srcset="img/user_placeholder.webp" type="image/webp"><img src="img/user_placeholder.jpg" alt="ваш аватар"></picture>
-                    </div>
-                    <div class="profile__info user">
-                        <span class="user__name">Лагутин Виталий</span>
-                        <span class="user__status">успешный покупатель</span>
-                        <button class="btn btn--white"><span>Зарегистрироваться</span></button>
-                        <button class="btn btn--red"><span>войти</span></button>
-                    </div>
-                </div>
 
                 <nav class="navbar">
 
@@ -221,6 +211,21 @@
     </ul>
 </div>
                 <a class="phone phone--no-text phone--icon-pulse" href="tel:+79898552277">+7 (989) 855 22 77</a>
+            </div>
+
+            <div class="sidebar__profile hidden">
+                <div class="profile">
+                    <div class="profile__avatar">
+                        <picture><source srcset="img/user_placeholder.webp" type="image/webp"><img src="img/user_placeholder.jpg" alt="ваш аватар"></picture>
+                    </div>
+                    <div class="profile__info user">
+                        <span class="user__name">Лагутин Виталий</span>
+                        <span class="user__status">успешный покупатель</span>
+                        <button class="btn btn--white"><span>Зарегистрироваться</span></button>
+                        <button class="btn btn--red"><span>войти</span></button>
+                    </div>
+                </div>
+
             </div>
 
         </div>
