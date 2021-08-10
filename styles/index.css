@@ -420,6 +420,8 @@ main {
           -ms-flex-align: center;
               align-items: center;
       height: 100%;
+      max-height: 500px;
+      padding-bottom: 20px;
       overflow-y: auto; }
       .sidebar__body .sidebar__feedback .phone-contact {
         display: -webkit-box;
@@ -631,9 +633,13 @@ main {
       background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), color-stop(40%, #f9fdf3), to(#f9fdf3));
       background: -o-linear-gradient(bottom, transparent 25%, #f9fdf3 40%, #f9fdf3);
       background: linear-gradient(0deg, transparent 25%, #f9fdf3 40%, #f9fdf3);
-      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  .hero::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: url(../icons/logo_icon.svg) no-repeat; }
 
 /* HEADER */
 .header {
@@ -1809,6 +1815,15 @@ main {
           background: #629600;
           color: #fff; } }
 
+@media (prefers-color-scheme: dark) {
+        .hero__title h1 {
+          color: #f9fdf3;
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), color-stop(40%, #f9fdf3), to(#f9fdf3));
+          background: -o-linear-gradient(bottom, transparent 25%, #f9fdf3 40%, #f9fdf3);
+          background: linear-gradient(0deg, transparent 25%, #f9fdf3 40%, #f9fdf3);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; } }
+
 @supports (-webkit-appearance:none){
 .main-page__body{background:url(../img/bg_pattern.webp) repeat}
 .main-page__body .hero::after{background:url(../icons/section_separator.webp)}
@@ -1822,6 +1837,7 @@ main {
 .sidebar-nav__item button[data-target='sidebar__cart']::before{background:url(../icons/cart_nav_btn.svg) no-repeat}
 .sidebar-nav__item button[data-target='sidebar__profile']::before{background:url(../icons/profile_nav_btn.svg) no-repeat}
 .hero{background:url(../img/soya.w1693.webp) center 35%/cover no-repeat}
+.hero::before{background:url(../icons/logo_icon.svg) no-repeat}
 .socials__item--insta{background:url(../icons/insta.webp) no-repeat}
 .socials__item--ok{background:url(../icons/ok.webp) no-repeat}
 .socials__item--vk{background:url(../icons/vk.webp) no-repeat}
@@ -1876,6 +1892,14 @@ main {
 }
 
  @media (any-hover: hover){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (prefers-color-scheme: dark){
 
 @supports (-webkit-appearance:none){
 
