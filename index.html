@@ -70,7 +70,7 @@
 
         <div class="sidebar__body">
 
-            <div class="sidebar__page-navigation mobile_hidden desctop_hidden">
+            <div class="sidebar__page-navigation mobile_hidden">
 
                 <nav class="navbar">
 
@@ -80,6 +80,10 @@
     </label> -->
 
     <ul class="navbar__list">
+
+        <li class="navbar__item">
+            <a class="navbar__link" href="#">КАТАЛОГ</a>
+        </li>
 
         <li class="navbar__item">
             <a class="navbar__link" href="#">О КОМПАНИИ</a>
@@ -103,7 +107,7 @@
 
             </div>
 
-            <div class="sidebar__catalog mobile_hidden">
+            <div class="sidebar__catalog mobile_hidden desctop_hidden">
                 <div class="search">
     <form>
         <input type="search" placeholder="Поиск" aria-label="Поиск">
@@ -209,13 +213,13 @@
             <div class="sidebar-nav__container __container">
                 <ul class="sidebar-nav__list">
 
-                    <li class="sidebar-nav__item __desktop-none">
+                    <li class="sidebar-nav__item">
                         <button data-target="sidebar__page-navigation">
                             <span>главная</span>
                         </button>
                     </li>
 
-                    <li class="sidebar-nav__item">
+                    <li class="sidebar-nav__item __desktop-none">
                         <button data-target="sidebar__catalog">
                             <span>каталог</span>
                         </button>
@@ -276,6 +280,8 @@
 
 
 
+
+
     <div class="header-body__logo logo--no-text">
         <a href="/" class="logo__link" aria-label="Ссылка на главную страницу" title="Вернуться на главную страницу">
     <svg class="logo__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -305,7 +311,6 @@
     </div>
 
 
-
     <div class="header-body__tools">
         <ul class="header-body__widgets widgets">
 
@@ -321,11 +326,11 @@
 
         </ul>
 
-        <button class="btn btn--white" id="burger-sidebar" aria-controls="sidebar"
-    aria-label="Открыть панель навигации по каталогу" data-target="sidebar__catalog">
-
-    <i class="btn__icon">
-        <svg class="burger" viewBox="0 0 100 100">
+        <div class="header-body__burger burger">
+            <button class="burger__btn" id="burger-sidebar" aria-controls="sidebar"
+    aria-label="Открыть панель навигации по каталогу" data-target="sidebar__page-navigation">
+    <i class="burger__icon">
+        <svg class="hamburger" viewBox="0 0 100 100">
     <path class=" top"
         d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
     <path class=" middle" d="m 30,50 h 40" />
@@ -334,9 +339,8 @@
 </svg>
     </i>
 
-    <span>каталог</span>
-
 </button>
+        </div>
 
         <nav class="navbar">
 
@@ -346,6 +350,10 @@
     </label> -->
 
     <ul class="navbar__list">
+
+        <li class="navbar__item">
+            <a class="navbar__link" href="#">КАТАЛОГ</a>
+        </li>
 
         <li class="navbar__item">
             <a class="navbar__link" href="#">О КОМПАНИИ</a>
@@ -606,7 +614,7 @@
         <footer class="footer">
     <div class="footer__container __container">
 
-        <div class="copyright">© 2011 – 2021 Магазин «Успех». Все права защищены.</div>
+        <div class="copyright"><span>© 2011 – 2021 Магазин «Успех».</span> <span>Все права защищены.</span> </div>
 
         <div class="developer">Разработка и поддержка - <a href="#" target="__blank">Я</a></div>
 
