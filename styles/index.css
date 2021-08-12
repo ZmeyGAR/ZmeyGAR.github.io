@@ -1652,6 +1652,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 10px;
     -o-object-fit: cover;
        object-fit: cover;
     -webkit-transition: all 0.3s ease;
@@ -1662,33 +1663,6 @@ main {
     -webkit-box-shadow: 0 -1px 6px 1px rgba(128, 127, 127, 0.1);
             box-shadow: 0 -1px 6px 1px rgba(128, 127, 127, 0.1);
     border-radius: 10%; }
-    .goods__link picture::before,
-    .goods__link source::before,
-    .goods__link img::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.4);
-      -webkit-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-      border-radius: inherit;
-      -webkit-animation: rotate 10s linear infinite;
-              animation: rotate 10s linear infinite;
-      z-index: -1; }
-    .goods__link picture::before,
-    .goods__link source::before,
-    .goods__link img::before {
-      -webkit-animation-duration: 15s;
-              animation-duration: 15s;
-      -webkit-animation-delay: 5s;
-              animation-delay: 5s;
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
 
 .goods__info {
   position: relative;
@@ -2469,8 +2443,8 @@ main {
     .goods__item:hover .goods__link picture,
     .goods__item:hover .goods__link source,
     .goods__item:hover .goods__link img {
-      -webkit-animation: none;
-              animation: none;
+      -webkit-animation-play-state: paused;
+              animation-play-state: paused;
       border-radius: 20% 80% 20% 80% /80% 20% 80% 20%;
       -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
