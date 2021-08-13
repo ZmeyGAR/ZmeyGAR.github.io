@@ -2365,17 +2365,7 @@ main {
     opacity: 0;
     visibility: hidden; } }
 
-body {
-  -webkit-transform-style: preserve-3d !important;
-          transform-style: preserve-3d !important;
-  -webkit-perspective: 10px !important;
-          perspective: 10px !important; }
-  body .wrapper {
-    -webkit-transform: translateZ(-10px) !important;
-            transform: translateZ(-10px) !important; }
-  body .section__animation {
-    overflow: visible !important; }
-  @media (min-width: 424.98px){
+@media (min-width: 424.98px){
     .hero {
       min-height: 424.98px; }
         .header.fixed .header-body__tools {
@@ -2389,7 +2379,8 @@ body {
         -webkit-box-direction: initial;
             -ms-flex-direction: initial;
                 flex-direction: initial; } }
-  @media (min-width: 767.98px){
+
+@media (min-width: 767.98px){
         .main-page__body .header,
         .catalog-page__body .header,
         .about-page__body .header {
@@ -2517,13 +2508,16 @@ body {
       padding: 20px; }
     .footer {
       padding: 2.7em 0; } }
-  @media (min-width: 1023.98px){
+
+@media (min-width: 1023.98px){
         .catalog--grid > li {
           max-width: 23%; } }
-  @media (min-width: 1439.98px){
+
+@media (min-width: 1439.98px){
         .hero__title h1 {
           font-size: 8vw; } }
-  @media (min-width: 1999.98px){
+
+@media (min-width: 1999.98px){
         .section__animation--combine::before {
           -webkit-animation: combineMove 20s linear 1s infinite;
                   animation: combineMove 20s linear 1s infinite; }
@@ -2532,11 +2526,13 @@ body {
                   animation: grassGrows 20s steps(18, end) infinite; }
       .catalog--grid {
         max-width: 100%; } }
-  @media (max-width: 424.98px){
+
+@media (max-width: 424.98px){
         .section__animation--tractor::before {
           -webkit-animation: combineMove 10s linear infinite;
                   animation: combineMove 10s linear infinite; } }
-  @media (any-hover: hover){
+
+@media (any-hover: hover){
           .sidebar__close .close__icon:hover::before, .sidebar__close .close__icon:hover::after {
             background: #ccc; }
         .navbar__item a:hover {
@@ -2613,7 +2609,8 @@ body {
       transition: all 0.3s ease;
       opacity: 0;
       color: inherit; } }
-  @media (prefers-color-scheme: dark){
+
+@media (prefers-color-scheme: dark){
         .hero__title h1 {
           color: #f9fdf3;
           background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), color-stop(40%, #f9fdf3), to(#f9fdf3));
