@@ -124,6 +124,10 @@ main {
   .section--separate:after {
     bottom: 0;
     background: url(../icons/section_separator.png); }
+  .section--banner {
+    width: 100%;
+    min-height: 360px;
+    background: url(../img/section__bg-banner.jpg) 0 0/cover no-repeat; }
   .section__container {
     padding-top: 45px;
     padding-bottom: 45px; }
@@ -171,29 +175,35 @@ main {
     position: relative;
     width: 100%;
     min-height: 160px;
-    margin-bottom: 5px;
     margin-top: -110px;
     overflow: hidden; }
-    .section__animation::before {
+    .section__animation::before, .section__animation::after {
       content: '';
       position: absolute;
-      bottom: 0;
-      left: -100%;
+      bottom: 0; }
+    .section__animation--combine::before {
+      left: -300px;
       width: 300px;
       height: 150px;
       background: url(../icons/combine.png) no-repeat;
       -webkit-animation: combineMove 20s linear infinite;
               animation: combineMove 20s linear infinite; }
-    .section__animation::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
+    .section__animation--combine::after {
       right: 0;
       width: 100%;
       height: 45px;
       background: url(../icons/grass.png) space;
       -webkit-animation: grassGrows 20s steps(10, end) 8s infinite;
               animation: grassGrows 20s steps(10, end) 8s infinite; }
+    .section__animation--tractor::before {
+      left: -100%;
+      width: 300px;
+      height: 150px;
+      background: url(../icons/tractor.png) 0 bottom/contain no-repeat;
+      -webkit-animation: combineMove 20s linear infinite;
+              animation: combineMove 20s linear infinite;
+      -webkit-animation-delay: 10s;
+              animation-delay: 10s; }
 
 .sidebar {
   position: fixed;
@@ -1371,32 +1381,6 @@ main {
     width: inherit;
     height: inherit; }
 
-.brands {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-width: 600px;
-  margin: 0 auto; }
-  .brands li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    height: 50%; }
-    .brands li picture,
-    .brands li img,
-    .brands li source {
-      width: 100%;
-      height: auto;
-      -o-object-fit: scale-down;
-         object-fit: scale-down; }
-
 .hamburger {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -1545,6 +1529,39 @@ main {
         .baloon-carusel__container > p > ul li,
         .baloon-carusel__container > div > ul li {
           margin: .5em 0; }
+
+.brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto; }
+  .brands li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    max-width: 40%;
+    height: 50%;
+    margin: 0.5em; }
+    .brands li picture,
+    .brands li img,
+    .brands li source {
+      width: 100%;
+      height: auto;
+      -o-object-fit: scale-down;
+         object-fit: scale-down; }
 
 #catalog-category {
   background: url(../img/redis.png) 8% 14% no-repeat; }
@@ -2082,59 +2099,10 @@ main {
 
 @-webkit-keyframes combineMove {
   0% {
-    left: -100%; }
-  1%,
-  3%,
-  5%,
-  7%,
-  9%,
-  11%,
-  13%,
-  15%,
-  17%,
-  19%,
-  21%,
-  23%,
-  25%,
-  27%,
-  29%,
-  31%,
-  33%,
-  35%,
-  37%,
-  39%,
-  41%,
-  43%,
-  45%,
-  47%,
-  49%,
-  51%,
-  53%,
-  55%,
-  57%,
-  59%,
-  61%,
-  63%,
-  65%,
-  67%,
-  69%,
-  71%,
-  73%,
-  75%,
-  77%,
-  79%,
-  81%,
-  83%,
-  85%,
-  87%,
-  89%,
-  91%,
-  93%,
-  95%,
-  97%,
-  99% {
-    -webkit-transform: rotateZ(-1deg) scale(1.03);
-            transform: rotateZ(-1deg) scale(1.03); }
+    left: -300px;
+    opacity: 1;
+    visibility: visible; }
+  0%,
   2%,
   4%,
   6%,
@@ -2159,91 +2127,53 @@ main {
   44%,
   46%,
   48%,
-  50%,
-  52%,
-  54%,
-  56%,
-  58%,
-  60%,
-  62%,
-  64%,
-  66%,
-  68%,
-  70%,
-  72%,
-  74%,
-  76%,
-  78%,
-  80%,
-  82%,
-  84%,
-  86%,
-  88%,
-  90%,
-  92%,
-  94%,
-  96%,
-  98% {
+  50% {
+    -webkit-transform: rotateZ(-1deg) scale(1.03);
+            transform: rotateZ(-1deg) scale(1.03);
+    opacity: 1;
+    visibility: visible; }
+  1%,
+  3%,
+  5%,
+  7%,
+  9%,
+  11%,
+  13%,
+  15%,
+  17%,
+  19%,
+  21%,
+  23%,
+  25%,
+  27%,
+  29%,
+  31%,
+  33%,
+  35%,
+  37%,
+  39%,
+  41%,
+  43%,
+  45%,
+  47%,
+  49% {
     -webkit-transform: rotateZ(1deg) scale(1);
             transform: rotateZ(1deg) scale(1); }
+  50% {
+    left: 100%;
+    opacity: 0;
+    visibility: hidden; }
   100% {
-    left: 100%; } }
+    left: -300px;
+    opacity: 0;
+    visibility: hidden; } }
 
 @keyframes combineMove {
   0% {
-    left: -100%; }
-  1%,
-  3%,
-  5%,
-  7%,
-  9%,
-  11%,
-  13%,
-  15%,
-  17%,
-  19%,
-  21%,
-  23%,
-  25%,
-  27%,
-  29%,
-  31%,
-  33%,
-  35%,
-  37%,
-  39%,
-  41%,
-  43%,
-  45%,
-  47%,
-  49%,
-  51%,
-  53%,
-  55%,
-  57%,
-  59%,
-  61%,
-  63%,
-  65%,
-  67%,
-  69%,
-  71%,
-  73%,
-  75%,
-  77%,
-  79%,
-  81%,
-  83%,
-  85%,
-  87%,
-  89%,
-  91%,
-  93%,
-  95%,
-  97%,
-  99% {
-    -webkit-transform: rotateZ(-1deg) scale(1.03);
-            transform: rotateZ(-1deg) scale(1.03); }
+    left: -300px;
+    opacity: 1;
+    visibility: visible; }
+  0%,
   2%,
   4%,
   6%,
@@ -2268,35 +2198,46 @@ main {
   44%,
   46%,
   48%,
-  50%,
-  52%,
-  54%,
-  56%,
-  58%,
-  60%,
-  62%,
-  64%,
-  66%,
-  68%,
-  70%,
-  72%,
-  74%,
-  76%,
-  78%,
-  80%,
-  82%,
-  84%,
-  86%,
-  88%,
-  90%,
-  92%,
-  94%,
-  96%,
-  98% {
+  50% {
+    -webkit-transform: rotateZ(-1deg) scale(1.03);
+            transform: rotateZ(-1deg) scale(1.03);
+    opacity: 1;
+    visibility: visible; }
+  1%,
+  3%,
+  5%,
+  7%,
+  9%,
+  11%,
+  13%,
+  15%,
+  17%,
+  19%,
+  21%,
+  23%,
+  25%,
+  27%,
+  29%,
+  31%,
+  33%,
+  35%,
+  37%,
+  39%,
+  41%,
+  43%,
+  45%,
+  47%,
+  49% {
     -webkit-transform: rotateZ(1deg) scale(1);
             transform: rotateZ(1deg) scale(1); }
+  50% {
+    left: 100%;
+    opacity: 0;
+    visibility: hidden; }
   100% {
-    left: 100%; } }
+    left: -300px;
+    opacity: 0;
+    visibility: hidden; } }
 
 @-webkit-keyframes grassGrows {
   0% {
@@ -2424,7 +2365,17 @@ main {
     opacity: 0;
     visibility: hidden; } }
 
-@media (min-width: 424.98px){
+body {
+  -webkit-transform-style: preserve-3d !important;
+          transform-style: preserve-3d !important;
+  -webkit-perspective: 10px !important;
+          perspective: 10px !important; }
+  body .wrapper {
+    -webkit-transform: translateZ(-10px) !important;
+            transform: translateZ(-10px) !important; }
+  body .section__animation {
+    overflow: visible !important; }
+  @media (min-width: 424.98px){
     .hero {
       min-height: 424.98px; }
         .header.fixed .header-body__tools {
@@ -2438,8 +2389,7 @@ main {
         -webkit-box-direction: initial;
             -ms-flex-direction: initial;
                 flex-direction: initial; } }
-
-@media (min-width: 767.98px){
+  @media (min-width: 767.98px){
         .main-page__body .header,
         .catalog-page__body .header,
         .about-page__body .header {
@@ -2567,28 +2517,26 @@ main {
       padding: 20px; }
     .footer {
       padding: 2.7em 0; } }
-
-@media (min-width: 1023.98px){
+  @media (min-width: 1023.98px){
         .catalog--grid > li {
           max-width: 23%; } }
-
-@media (min-width: 1439.98px){
+  @media (min-width: 1439.98px){
         .hero__title h1 {
           font-size: 8vw; } }
-
-@media (min-width: 1999.98px){
+  @media (min-width: 1999.98px){
+        .section__animation--combine::before {
+          -webkit-animation: combineMove 20s linear 1s infinite;
+                  animation: combineMove 20s linear 1s infinite; }
+        .section__animation--combine::after {
+          -webkit-animation: grassGrows 20s steps(18, end) infinite;
+                  animation: grassGrows 20s steps(18, end) infinite; }
       .catalog--grid {
         max-width: 100%; } }
-
-@media (max-width: 424.98px){
-        .section__animation::before {
+  @media (max-width: 424.98px){
+        .section__animation--tractor::before {
           -webkit-animation: combineMove 10s linear infinite;
-                  animation: combineMove 10s linear infinite; }
-        .section__animation::after {
-          -webkit-animation: grassGrows 10s steps(2, end) 1s infinite;
-                  animation: grassGrows 10s steps(2, end) 1s infinite; } }
-
-@media (any-hover: hover){
+                  animation: combineMove 10s linear infinite; } }
+  @media (any-hover: hover){
           .sidebar__close .close__icon:hover::before, .sidebar__close .close__icon:hover::after {
             background: #ccc; }
         .navbar__item a:hover {
@@ -2665,8 +2613,7 @@ main {
       transition: all 0.3s ease;
       opacity: 0;
       color: inherit; } }
-
-@media (prefers-color-scheme: dark){
+  @media (prefers-color-scheme: dark){
         .hero__title h1 {
           color: #f9fdf3;
           background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), color-stop(40%, #f9fdf3), to(#f9fdf3));
@@ -2681,8 +2628,10 @@ main {
 .main-page .hero::after{background:url(../icons/section_separator.webp)}
 .section--separate:before{background:url(../icons/section_separator_down.webp)}
 .section--separate:after{background:url(../icons/section_separator.webp)}
-.section__animation::before{background:url(../icons/combine.webp) no-repeat}
-.section__animation::after{background:url(../icons/grass.webp) space}
+.section--banner{background:url(../img/section__bg-banner.webp) 0 0/cover no-repeat}
+.section__animation--combine::before{background:url(../icons/combine.webp) no-repeat}
+.section__animation--combine::after{background:url(../icons/grass.webp) space}
+.section__animation--tractor::before{background:url(../icons/tractor.webp) 0 bottom/contain no-repeat}
 .sidebar-nav__item button[data-target='sidebar__page-navigation']::before{background:url(../icons/main_nav_btn.svg) no-repeat}
 .sidebar-nav__item button[data-target='sidebar__catalog']::before{background:url(../icons/catalog_nav_btn.svg) no-repeat}
 .sidebar-nav__item button[data-target='sidebar__feedback']::before{background:url(../icons/feedback_nav_btn.svg) no-repeat}
