@@ -6,40 +6,39 @@
 
 
 
-    <meta name="author" content=Лагутин Виталий>
+<meta name="author" content=Лагутин Виталий>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 
-    <!-- Fonts -->
-    <!-- Cuprum-medium -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap&subset=latin,latin-ext,cyrillic"
-        rel="stylesheet">
+<!-- Fonts -->
+<!-- Cuprum-medium -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap&subset=latin,latin-ext,cyrillic"
+    rel="stylesheet">
 
-    <style data-target type="text/css">
-        :root {
-            color-scheme: light dark;
-        }
-    </style>
+<style data-target type="text/css">
+    :root {
+        color-scheme: light dark;
+    }
+</style>
 
-    <!-- BASE  -->
-    <!-- <base href="http://localhost:3000"> -->
-    <!-- <base href="https://zmeygar.github.io/"> -->
-    <base href="/">
+<!-- BASE  -->
+<base href="/">
 
 
-    <!-- normalize.css -->
-    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
 
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="styles/style.min.css" type="text/css">
+<!-- normalize.css -->
+<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+
+<!-- STYLESHEET -->
+<link rel="stylesheet" href="styles/style.min.css" type="text/css">
 
 
-    <!-- SCRIPTS -->
-    <script src="scripts/main.min.js" type="module" defer></script>
+<!-- SCRIPTS -->
+<script src="scripts/main.min.js" type="module" defer></script>
 
 </head>
 
@@ -76,9 +75,7 @@
                     <div class="sidebar__profile mobile_hidden">
                         <div class="profile">
                             <div class="profile__avatar">
-                                <picture>
-                                    <source srcset="img/user_placeholder.webp" type="image/webp"><img
-                                        src="img/user_placeholder.jpg" alt="ваш аватар"></picture>
+                                <picture><source srcset="img/user_placeholder.webp" type="image/webp"><img src="img/user_placeholder.jpg" alt="ваш аватар"></picture>
                             </div>
                             <div class="profile__info user">
                                 <span class="user__name">Лагутин Виталий</span>
@@ -98,80 +95,83 @@
                         <nav class="navbar">
                             <ul class="navbar__list">
                                 <li class="navbar__item">
-                                    <a class="navbar__link" href=#catalog-category>КАТАЛОГ</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a class="navbar__link" href=/contacts/>КОНТАКТЫ </a> </li> <li
-                                        class="navbar__item">
-                                        <a class="navbar__link" href=/about/>О компании</a> </li> <li
-                                            class="navbar__item">
-                                            <a class="navbar__link" href=/payment/>ОПЛАТА </a> </li> </ul> </nav> </div>
-                                                <div class="sidebar__catalog mobile_hidden desctop_hidden">
-                                                <div class="search">
-                                                    <form>
-                                                        <input type="search" placeholder="Поиск" aria-label="Поиск">
-                                                        <button type="submit"></button>
-                                                    </form>
-                                                </div>
-                                                <h3 class="catalog__title">Каталог</h3>
-                                                <ul class="catalog--list">
+    <a class="navbar__link" href=#catalog-category>КАТАЛОГ</a>
+</li><li class="navbar__item">
+    <a class="navbar__link" href=/contacts/>КОНТАКТЫ</a>
+</li><li class="navbar__item">
+    <a class="navbar__link" href=/about/>О компании</a>
+</li><li class="navbar__item">
+    <a class="navbar__link" href=/payment/>ОПЛАТА</a>
+</li>
+                            </ul>
+                        </nav>
 
-                                                    <li>
-                                                        <span>семена</span>
-                                                        <ul>
-                                                            <li>
-                                                                <span>Капуста</span>
-                                                                <ul>
-                                                                    <li><a href="#">белокачанная</a></li>
-                                                                    <li><a href="#">краснокачанная</a></li>
-                                                                    <li><a href="#">цветная</a></li>
-                                                                    <li><a href="#">пекинская</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <span>перец</span>
-                                                                <ul>
-                                                                    <li><a href="#">острый</a></li>
-                                                                    <li><a href="#">сладкий</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li><a href="#">томаты</a></li>
-                                                            <li><a href="/catalog/seeds/watermelon/">арбуз</a></li>
-                                                            <li><a href="#">дыня</a></li>
-                                                            <li><a href="#">баклажаны</a></li>
-                                                            <li><a href="#">фасоль</a></li>
-                                                            <li><a href="#">кабачки</a></li>
-                                                            <li><a href="#">кукуруза</a></li>
-                                                            <li><a href="#">лук</a></li>
-                                                            <li><a href="#">Огурец</a></li>
-                                                            <li><a href="#">салат</a></li>
-                                                            <li><a href="#">зелень</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">УДОБРЕНИЯ</a></li>
-                                                    <li><a href="#">Средства защиты</a></li>
-                                                    <li>
-                                                        <span>укрывной материал</span>
-                                                        <ul>
-                                                            <li><a href="#">Агроспан</a></li>
-                                                            <li><a href="#">Мульчирующая пленка</a></li>
-                                                            <li><a href="#">тепличная пленка</a></li>
-                                                            <li><a href="#">сетка</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Инструмент</a>
-                                                    </li>
+                    </div>
 
-                                                </ul>
+                    <div class="sidebar__catalog mobile_hidden desctop_hidden">
+                        <div class="search">
+    <form>
+        <input type="search" placeholder="Поиск" aria-label="Поиск">
+        <button type="submit"></button>
+    </form>
+</div>
+                        <h3 class="catalog__title">Каталог</h3>
+                        <ul class="catalog--list">
+
+                            <li>
+                                <span>семена</span>
+                                <ul>
+                                    <li>
+                                        <span>Капуста</span>
+                                        <ul>
+                                            <li><a href="#">белокачанная</a></li>
+                                            <li><a href="#">краснокачанная</a></li>
+                                            <li><a href="#">цветная</a></li>
+                                            <li><a href="#">пекинская</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>перец</span>
+                                        <ul>
+                                            <li><a href="#">острый</a></li>
+                                            <li><a href="#">сладкий</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">томаты</a></li>
+                                    <li><a href="/catalog/seeds/watermelon/">арбуз</a></li>
+                                    <li><a href="#">дыня</a></li>
+                                    <li><a href="#">баклажаны</a></li>
+                                    <li><a href="#">фасоль</a></li>
+                                    <li><a href="#">кабачки</a></li>
+                                    <li><a href="#">кукуруза</a></li>
+                                    <li><a href="#">лук</a></li>
+                                    <li><a href="#">Огурец</a></li>
+                                    <li><a href="#">салат</a></li>
+                                    <li><a href="#">зелень</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">УДОБРЕНИЯ</a></li>
+                            <li><a href="#">Средства защиты</a></li>
+                            <li>
+                                <span>укрывной материал</span>
+                                <ul>
+                                    <li><a href="#">Агроспан</a></li>
+                                    <li><a href="#">Мульчирующая пленка</a></li>
+                                    <li><a href="#">тепличная пленка</a></li>
+                                    <li><a href="#">сетка</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Инструмент</a>
+                            </li>
+
+                        </ul>
                     </div>
 
                     <div class="sidebar__feedback mobile_hidden desctop_hidden">
                         <div class="phone-contact">
                             <div class="phone-contact__logo">
-                                <picture>
-                                    <source srcset="icons/logo_1.webp" type="image/webp"><img src="icons/logo_1.png"
-                                        alt="магазин УСПЕХ"></picture>
+                                <picture><source srcset="icons/logo_1.webp" type="image/webp"><img src="icons/logo_1.png" alt="магазин УСПЕХ"></picture>
                             </div>
 
                             <div class="phone-contact__link">
@@ -181,22 +181,21 @@
                         </div>
 
                         <button class="btn btn--red" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
-                            <span>Заказать звонок</span>
-                        </button>
+    <span>Заказать звонок</span>
+</button>
                         <div class="socials">
-                            <ul class="socials__list ">
-                                <li class="socials__item">
-                                    <a href="https://instagram.com/magazin_uspeh_kurganinsk"
-                                        class="socials__item--insta"></a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="https://ok.ru/" class="socials__item--ok"></a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="https://vk.com/" class="socials__item--vk"></a>
-                                </li>
-                            </ul>
-                        </div>
+    <ul class="socials__list ">
+        <li class="socials__item">
+            <a href="https://instagram.com/magazin_uspeh_kurganinsk" class="socials__item--insta"></a>
+        </li>
+        <li class="socials__item">
+            <a href="https://ok.ru/" class="socials__item--ok"></a>
+        </li>
+        <li class="socials__item">
+            <a href="https://vk.com/" class="socials__item--vk"></a>
+        </li>
+    </ul>
+</div>
                         <a class="phone phone--no-text phone--icon-pulse" href="tel:+79898552277">+7 (989) 855 22 77</a>
                     </div>
 
@@ -273,38 +272,34 @@
                 <div class="__container">
 
                     <div class="header__head header-head">
-                        <ul class="header-head__widgets widgets">
-                            <li class="widgets__item">
-                                <div class="socials">
-                                    <ul class="socials__list ">
-                                        <li class="socials__item">
-                                            <a href="https://instagram.com/magazin_uspeh_kurganinsk"
-                                                class="socials__item--insta"></a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="https://ok.ru/" class="socials__item--ok"></a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="https://vk.com/" class="socials__item--vk"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+    <ul class="header-head__widgets widgets">
+        <li class="widgets__item">
+            <div class="socials">
+    <ul class="socials__list ">
+        <li class="socials__item">
+            <a href="https://instagram.com/magazin_uspeh_kurganinsk" class="socials__item--insta"></a>
+        </li>
+        <li class="socials__item">
+            <a href="https://ok.ru/" class="socials__item--ok"></a>
+        </li>
+        <li class="socials__item">
+            <a href="https://vk.com/" class="socials__item--vk"></a>
+        </li>
+    </ul>
+</div></li>
+    </ul>
+</div>
 
                     <div class="header__body header-body">
 
                         <div class="header-body__logo logo--no-text">
-                            <a href="/" class="logo__link" aria-label="Ссылка на главную страницу"
-                                title="Вернуться на главную страницу">
-                                <svg class="logo__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 100 1050 654"
-                                    xml:space="preserve">
-                                    <path class="shadow" d="M874.84,169.63c-2.53,62.96-31.32,119.91-80.68,155.34c-41.13,29.42-84.79,40.81-124.34,55.05
+                            <a href="/" class="logo__link" aria-label="Ссылка на главную страницу" title="Вернуться на главную страницу">
+    <svg class="logo__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="-50 100 1050 654" xml:space="preserve">
+        <path class="shadow" d="M874.84,169.63c-2.53,62.96-31.32,119.91-80.68,155.34c-41.13,29.42-84.79,40.81-124.34,55.05
 			c46.19-6.01,94.6-16.14,137.31-45.88c62.33-42.71,114.21-108.83,130.98-170.85C921.03,161.72,892.87,167.73,874.84,169.63
 			L874.84,169.63z" />
-                                    <path class="leaf" d="M511.32,449.31l43.34-40.5l18.98-17.4c25.31-23.73,51.25-46.82,76.56-70.24
+        <path class="leaf" d="M511.32,449.31l43.34-40.5l18.98-17.4c25.31-23.73,51.25-46.82,76.56-70.24
 			c33.54-30.69,70.87-55.05,107.25-81.63c31.95-23.41,56.95-47.77,75.3-82.89c1.27-2.53-6.33,5.06-6.96,6.01
 			c-6.01,8.23-12.02,15.82-19.3,23.41c-15.5,15.5-34.49,28.16-53.15,39.55c-40.5,25.31-81.31,49.04-116.11,82.26
 			c-24.36,23.41-48.72,49.67-72.77,74.03l-18.03,18.35l-41.76,42.08l-31.64,31.95l-1.27,6.01l6.64-0.63L511.32,449.31z
@@ -312,17 +307,17 @@
 			c24.04,89.85-1.58,184.77-69.92,233.17c-65.49,46.82-147.75,61.06-189.51,69.29c-19.62,3.8-34.49,11.71-48.09,21.51
 			c1.27,1.9,2.53,3.48,3.8,5.38c31.32,48.09,17.4,112-30.37,143.32c-48.09,31.01-112,17.4-143.32-30.69
 			c-31.01-47.77-17.4-112,30.69-143C457.85,366.73,504.67,369.26,538.21,393.94L538.21,393.94z" />
-                                    <path class="circle" d="M476.2,238.6c36.7,0,71.82,8.23,102.82,23.41c-7.28,16.14-12.34,33.54-15.19,51.89
+        <path class="circle" d="M476.2,238.6c36.7,0,71.82,8.23,102.82,23.41c-7.28,16.14-12.34,33.54-15.19,51.89
 			c-25.94-13.92-56-22.15-87.64-22.15c-50.94,0-97.13,20.56-130.35,54.1c-33.54,33.22-54.1,79.41-54.1,130.35
 			s20.56,96.81,54.1,130.35c33.22,33.22,79.41,53.78,130.35,53.78c50.94,0,96.81-20.56,130.35-53.78
 			c33.22-33.54,53.78-79.41,53.78-130.35c0-22.15-3.8-43.66-11.07-63.28c16.14-3.48,33.54-7.91,51.89-13.29
 			c8.23,24.04,12.66,49.67,12.66,76.56c0,65.49-26.58,124.97-69.6,168c-43.03,43.03-102.51,69.6-168,69.6
 			c-65.81,0-124.97-26.58-168-69.6c-43.03-43.03-69.6-102.51-69.6-168c0-65.81,26.58-124.97,69.6-168S410.39,238.6,476.2,238.6
 			L476.2,238.6z" />
-                                </svg>
-                                <span class="logo__title">Успех</span>
-                                <span class="logo__text">Успешное земледелие</span>
-                            </a>
+    </svg>
+    <span class="logo__title">Успех</span>
+    <span class="logo__text">Успешное земледелие</span>
+</a>
                         </div>
 
                         <div class="header-body__tools">
@@ -333,69 +328,75 @@
                                 </li>
 
                                 <li class="widgets__item feedback">
-                                    <button class="btn btn--red" id="feedback" aria-controls=""
-                                        aria-labelledby="Заказать звонок">
-                                        <span>Заказать звонок</span>
-                                    </button>
+                                    <button class="btn btn--red" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
+    <span>Заказать звонок</span>
+</button>
                                 </li>
 
                             </ul>
 
                             <div class="header-body__burger burger">
                                 <button class="burger__btn" id="burger-sidebar" aria-controls="sidebar"
-                                    aria-label="Открыть панель навигации по каталогу"
-                                    data-target="sidebar__page-navigation">
-                                    <i class="burger__icon">
-                                        <svg class="hamburger" viewBox="0 0 100 100">
-                                            <path class=" top"
-                                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                                            <path class=" middle" d="m 30,50 h 40" />
-                                            <path class=" bottom"
-                                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                                        </svg>
-                                    </i>
+    aria-label="Открыть панель навигации по каталогу" data-target="sidebar__page-navigation">
+    <i class="burger__icon">
+        <svg class="hamburger" viewBox="0 0 100 100">
+    <path class=" top"
+        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+    <path class=" middle" d="m 30,50 h 40" />
+    <path class=" bottom"
+        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+</svg>
+    </i>
 
-                                </button>
+</button>
                             </div>
                             <nav class="navbar">
                                 <ul class="navbar__list">
                                     <li class="navbar__item">
-                                        <a class="navbar__link" href=#catalog-category>КАТАЛОГ</a>
-                                    </li>
-                                    <li class="navbar__item">
-                                        <a class="navbar__link" href=/contacts/>КОНТАКТЫ </a> </li> <li
-                                            class="navbar__item">
-                                            <a class="navbar__link" href=/about/>О компании</a> </li> <li
-                                                class="navbar__item">
-                                                <a class="navbar__link" href=/payment/>ОПЛАТА </a> </li> </ul> </nav>
-                                                    </div> </div> <div class="header__footer header-footer">
+    <a class="navbar__link" href=#catalog-category>КАТАЛОГ</a>
+</li><li class="navbar__item">
+    <a class="navbar__link" href=/contacts/>КОНТАКТЫ</a>
+</li><li class="navbar__item">
+    <a class="navbar__link" href=/about/>О компании</a>
+</li><li class="navbar__item">
+    <a class="navbar__link" href=/payment/>ОПЛАТА</a>
+</li>
 
-                                                    <ul class="header-footer__widgets widgets">
-                                                        <li class="widgets__item">
-                                                            <nav class="breadcrumbs" aria-label="breadcrumbs">
-                                                                <ol class="breadcrumbs__list">
+                                </ul>
 
-
-
-                                                                </ol>
-                                                            </nav>
-                                                        </li>
-                                                        <li class="widgets__item">
-                                                            <div class="search">
-                                                                <form>
-                                                                    <input type="search" placeholder="Поиск"
-                                                                        aria-label="Поиск">
-                                                                    <button type="submit"></button>
-                                                                </form>
-                                                            </div>
-                                                        </li>
-
-                                                    </ul>
-
+                            </nav>
 
                         </div>
 
                     </div>
+
+                    <div class="header__footer header-footer">
+
+                        <ul class="header-footer__widgets widgets">
+                            <li class="widgets__item">
+                                <nav class="breadcrumbs" aria-label="breadcrumbs">
+                                    <ol class="breadcrumbs__list">
+
+                                        
+
+                                    </ol>
+                                </nav>
+                            </li>
+                            <li class="widgets__item">
+                                <div class="search">
+    <form>
+        <input type="search" placeholder="Поиск" aria-label="Поиск">
+        <button type="submit"></button>
+    </form>
+</div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
 
             </header>
 
@@ -407,156 +408,152 @@
         <main>
 
             <section class="section" id="catalog-category">
-                <div class="section__container __container">
-                    <h2 class="section__title">Товары и услуги</h2>
+    <div class="section__container __container">
+        <h2 class="section__title">Товары и услуги</h2>
 
-                    <div class="section__content">
-                        <div class="catalog">
-                            <ul class="catalog--grid category">
+        <div class="section__content">
+            <div class="catalog">
+                <ul class="catalog--grid category">
 
-                                <li class="category__item">
-                                    <a href="catalog/seeds/" class="category__link" for="seeds">
-                                        <picture>
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
-                                                type="image/webp">
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
-                                                type="image/jpg">
+                    <li class="category__item">
+                        <a href="catalog/seeds/" class="category__link" for="seeds">
+                            <picture>
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
+                                    type="image/jpg">
 
-                                            <source
-                                                srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
-                                                type="image/webp">
-                                            <source
-                                                srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
-                                                type="image/jpg">
+                                <source
+                                    srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
+                                    type="image/webp">
+                                <source srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
+                                    type="image/jpg">
 
-                                            <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
-                                        </picture>
-                                        <span>Семена</span>
-                                    </a>
-                                </li>
-                                <li class="category__item">
-                                    <a href="#" class="category__link">
-                                        <picture>
+                                <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
+                            </picture>
+                            <span>Семена</span>
+                        </a>
+                    </li>
+                    <li class="category__item">
+                        <a href="#" class="category__link">
+                            <picture>
 
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
-                                                type="image/webp">
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
-                                                type="image/jpg">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                    type="image/jpg">
 
-                                            <source
-                                                srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
-                                                type="image/webp">
-                                            <source
-                                                srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
-                                                type="image/jpg">
+                                <source
+                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                    type="image/jpg">
 
-                                            <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
 
-                                        </picture>
-                                        <span>удобрения</span>
-                                    </a>
-                                </li>
-                                <li class="category__item">
-                                    <a href=" #" class="category__link">
-                                        <picture>
+                            </picture>
+                            <span>удобрения</span>
+                        </a>
+                    </li>
+                    <li class="category__item">
+                        <a href=" #" class="category__link">
+                            <picture>
 
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/chemistry/chemistry.h352.webp 1x, img/catalog/chemistry/chemistry@2x.webp 2x"
-                                                type="image/webp">
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/chemistry/chemistry.h352.jpg 1x, img/catalog/chemistry/chemistry@2x.jpg 2x"
-                                                type="image/jpg">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/chemistry/chemistry.h352.webp 1x, img/catalog/chemistry/chemistry@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/chemistry/chemistry.h352.jpg 1x, img/catalog/chemistry/chemistry@2x.jpg 2x"
+                                    type="image/jpg">
 
-                                            <source
-                                                srcset="img/catalog/chemistry/chemistry.h245.webp 1x,img/catalog/chemistry/chemistry.h352.webp 2x"
-                                                type="image/webp">
-                                            <source
-                                                srcset="img/catalog/chemistry/chemistry.h245.jpg 1x,img/catalog/chemistry/chemistry.h352.jpg 2x"
-                                                type="image/jpg">
+                                <source
+                                    srcset="img/catalog/chemistry/chemistry.h245.webp 1x,img/catalog/chemistry/chemistry.h352.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="img/catalog/chemistry/chemistry.h245.jpg 1x,img/catalog/chemistry/chemistry.h352.jpg 2x"
+                                    type="image/jpg">
 
-                                            <img src="img/catalog/chemistry/chemistry.h245.jpg" alt="средства защиты">
-                                        </picture>
-                                        <span>средства защиты</span>
-                                    </a>
-                                </li>
-                                <li class="category__item">
-                                    <a href="#" class="category__link" for="membrane">
-                                        <picture>
+                                <img src="img/catalog/chemistry/chemistry.h245.jpg" alt="средства защиты">
+                            </picture>
+                            <span>средства защиты</span>
+                        </a>
+                    </li>
+                    <li class="category__item">
+                        <a href="#" class="category__link" for="membrane">
+                            <picture>
 
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/membrane/membrane.h352.webp 1x, img/catalog/membrane/membrane@2x.webp 2x"
-                                                type="image/webp">
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/membrane/membrane.h352.jpg 1x, img/catalog/membrane/membrane@2x.jpg 2x"
-                                                type="image/jpg">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/membrane/membrane.h352.webp 1x, img/catalog/membrane/membrane@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/membrane/membrane.h352.jpg 1x, img/catalog/membrane/membrane@2x.jpg 2x"
+                                    type="image/jpg">
 
-                                            <source
-                                                srcset="img/catalog/membrane/membrane.h245.webp 1x,img/catalog/membrane/membrane.h352.webp 2x"
-                                                type="image/webp">
-                                            <source
-                                                srcset="img/catalog/membrane/membrane.h245.jpg 1x,img/catalog/membrane/membrane.h352.jpg 2x"
-                                                type="image/jpg">
+                                <source
+                                    srcset="img/catalog/membrane/membrane.h245.webp 1x,img/catalog/membrane/membrane.h352.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="img/catalog/membrane/membrane.h245.jpg 1x,img/catalog/membrane/membrane.h352.jpg 2x"
+                                    type="image/jpg">
 
-                                            <img src="img/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
-                                        </picture>
-                                        <span>укрывной материал</span>
-                                    </a>
-                                </li>
-                                <li class="category__item">
-                                    <a href=" #" class="category__link">
-                                        <picture>
+                                <img src="img/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
+                            </picture>
+                            <span>укрывной материал</span>
+                        </a>
+                    </li>
+                    <li class="category__item">
+                        <a href=" #" class="category__link">
+                            <picture>
 
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/tools/tools.h352.webp 1x, img/catalog/tools/tools@2x.webp 2x"
-                                                type="image/webp">
-                                            <source media="(min-width: 2559px)"
-                                                srcset="img/catalog/tools/tools.h352.jpg 1x, img/catalog/tools/tools@2x.jpg 2x"
-                                                type="image/jpg">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/tools/tools.h352.webp 1x, img/catalog/tools/tools@2x.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 2559px)"
+                                    srcset="img/catalog/tools/tools.h352.jpg 1x, img/catalog/tools/tools@2x.jpg 2x"
+                                    type="image/jpg">
 
-                                            <source
-                                                srcset="img/catalog/tools/tools.h245.webp 1x,img/catalog/tools/tools.h352.webp 2x"
-                                                type="image/webp">
-                                            <source
-                                                srcset="img/catalog/tools/tools.h245.jpg 1x,img/catalog/tools/tools.h352.jpg 2x"
-                                                type="image/jpg">
+                                <source
+                                    srcset="img/catalog/tools/tools.h245.webp 1x,img/catalog/tools/tools.h352.webp 2x"
+                                    type="image/webp">
+                                <source srcset="img/catalog/tools/tools.h245.jpg 1x,img/catalog/tools/tools.h352.jpg 2x"
+                                    type="image/jpg">
 
-                                            <img src="img/catalog/tools/tools.h245.jpg" alt="инструмент">
+                                <img src="img/catalog/tools/tools.h245.jpg" alt="инструмент">
 
-                                        </picture>
-                                        <span>инструмент</span>
+                            </picture>
+                            <span>инструмент</span>
 
-                                    </a>
-                                </li>
+                        </a>
+                    </li>
 
-                            </ul>
-                        </div>
+                </ul>
+            </div>
 
 
 
-                    </div>
+        </div>
 
 
-                </div>
+    </div>
 
-            </section>
+</section>
             <section class="section section--separate contacts ">
-                <div class="section__container __container">
+    <div class="section__container __container">
 
-                    <div class="section__header contacts__header">
-                        <div class="contacts__logo logo logo--white">
-                            <a href="/" class="logo__link" aria-label="Ссылка на главную страницу"
-                                title="Вернуться на главную страницу">
-                                <svg class="logo__icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 100 1050 654"
-                                    xml:space="preserve">
-                                    <path class="shadow" d="M874.84,169.63c-2.53,62.96-31.32,119.91-80.68,155.34c-41.13,29.42-84.79,40.81-124.34,55.05
+        <div class="section__header contacts__header">
+            <div class="contacts__logo logo logo--white">
+                <a href="/" class="logo__link" aria-label="Ссылка на главную страницу" title="Вернуться на главную страницу">
+    <svg class="logo__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="-50 100 1050 654" xml:space="preserve">
+        <path class="shadow" d="M874.84,169.63c-2.53,62.96-31.32,119.91-80.68,155.34c-41.13,29.42-84.79,40.81-124.34,55.05
 			c46.19-6.01,94.6-16.14,137.31-45.88c62.33-42.71,114.21-108.83,130.98-170.85C921.03,161.72,892.87,167.73,874.84,169.63
 			L874.84,169.63z" />
-                                    <path class="leaf" d="M511.32,449.31l43.34-40.5l18.98-17.4c25.31-23.73,51.25-46.82,76.56-70.24
+        <path class="leaf" d="M511.32,449.31l43.34-40.5l18.98-17.4c25.31-23.73,51.25-46.82,76.56-70.24
 			c33.54-30.69,70.87-55.05,107.25-81.63c31.95-23.41,56.95-47.77,75.3-82.89c1.27-2.53-6.33,5.06-6.96,6.01
 			c-6.01,8.23-12.02,15.82-19.3,23.41c-15.5,15.5-34.49,28.16-53.15,39.55c-40.5,25.31-81.31,49.04-116.11,82.26
 			c-24.36,23.41-48.72,49.67-72.77,74.03l-18.03,18.35l-41.76,42.08l-31.64,31.95l-1.27,6.01l6.64-0.63L511.32,449.31z
@@ -564,65 +561,60 @@
 			c24.04,89.85-1.58,184.77-69.92,233.17c-65.49,46.82-147.75,61.06-189.51,69.29c-19.62,3.8-34.49,11.71-48.09,21.51
 			c1.27,1.9,2.53,3.48,3.8,5.38c31.32,48.09,17.4,112-30.37,143.32c-48.09,31.01-112,17.4-143.32-30.69
 			c-31.01-47.77-17.4-112,30.69-143C457.85,366.73,504.67,369.26,538.21,393.94L538.21,393.94z" />
-                                    <path class="circle" d="M476.2,238.6c36.7,0,71.82,8.23,102.82,23.41c-7.28,16.14-12.34,33.54-15.19,51.89
+        <path class="circle" d="M476.2,238.6c36.7,0,71.82,8.23,102.82,23.41c-7.28,16.14-12.34,33.54-15.19,51.89
 			c-25.94-13.92-56-22.15-87.64-22.15c-50.94,0-97.13,20.56-130.35,54.1c-33.54,33.22-54.1,79.41-54.1,130.35
 			s20.56,96.81,54.1,130.35c33.22,33.22,79.41,53.78,130.35,53.78c50.94,0,96.81-20.56,130.35-53.78
 			c33.22-33.54,53.78-79.41,53.78-130.35c0-22.15-3.8-43.66-11.07-63.28c16.14-3.48,33.54-7.91,51.89-13.29
 			c8.23,24.04,12.66,49.67,12.66,76.56c0,65.49-26.58,124.97-69.6,168c-43.03,43.03-102.51,69.6-168,69.6
 			c-65.81,0-124.97-26.58-168-69.6c-43.03-43.03-69.6-102.51-69.6-168c0-65.81,26.58-124.97,69.6-168S410.39,238.6,476.2,238.6
 			L476.2,238.6z" />
-                                </svg>
-                                <span class="logo__title">Успех</span>
-                                <span class="logo__text">Успешное земледелие</span>
-                            </a>
-                        </div>
-                        <h3 class="section__title section__title--white contacts__title">контактная информация</h3>
-                    </div>
+    </svg>
+    <span class="logo__title">Успех</span>
+    <span class="logo__text">Успешное земледелие</span>
+</a>
+            </div>
+            <h3 class="section__title section__title--white contacts__title">контактная информация</h3>
+        </div>
 
-                    <div class="section__content">
-                        <ul class="contacts__list">
-                            <li class="contacts__item address">Россия, Краснодарский край, Курганинский р-н, станица
-                                Михайловская,
-                                ул. Советская, 77, 352401</li>
+        <div class="section__content">
+            <ul class="contacts__list">
+                <li class="contacts__item address">Россия, Краснодарский край, Курганинский р-н, станица Михайловская,
+                    ул. Советская, 77, 352401</li>
 
-                            <li class="contacts__item phone"><a class="phone__link" href="tel:+79898552277">+7 (989) 855
-                                    22 77</a></li>
+                <li class="contacts__item phone"><a class="phone__link" href="tel:+79898552277">+7 (989) 855 22 77</a></li>
 
-                            <li class="contacts__item email"> <a href="mailto:info@uspeh-magazin"
-                                    class="email__link">info@uspeh-magazin</a>
-                            </li>
+                <li class="contacts__item email"> <a href="mailto:info@uspeh-magazin"
+                        class="email__link">info@uspeh-magazin</a>
+                </li>
 
-                            <li class="contacts__item schedule">Режим работы: ПН-ПТ 8:00 - 18:00, СБ-ВС 8:00 - 17:00
-                            </li>
+                <li class="contacts__item schedule">Режим работы: ПН-ПТ 8:00 - 18:00, СБ-ВС 8:00 - 17:00</li>
 
-                            <li class="contacts__item feedback"><button class="btn btn--red" id="feedback"
-                                    aria-controls="" aria-labelledby="Заказать звонок">
-                                    <span>Заказать звонок</span>
-                                </button></li>
+                <li class="contacts__item feedback"><button class="btn btn--red" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
+    <span>Заказать звонок</span>
+</button></li>
 
-                        </ul>
-                    </div>
+            </ul>
+        </div>
 
-                </div>
-                <div class="section__animation">
-                    <span class="combine"></span>
-                    <span class="grass"></span>
-                </div>
+    </div>
+    <div class="section__animation">
+        <span class="combine"></span>
+        <span class="grass"></span>
+    </div>
 
-            </section>
+</section>
 
         </main>
 
         <footer class="footer">
-            <div class="footer__container __container">
+    <div class="footer__container __container">
 
-                <div class="copyright"><span>© 2011 – 2021 Магазин «Успех».</span> <span>Все права защищены.</span>
-                </div>
+        <div class="copyright"><span>© 2011 – 2021 Магазин «Успех».</span> <span>Все права защищены.</span> </div>
 
-                <div class="developer">Разработка и поддержка - <a href="#" target="__blank">Я</a></div>
+        <div class="developer">Разработка и поддержка - <a href="#" target="__blank">Я</a></div>
 
-            </div>
-        </footer>
+    </div>
+</footer>
 
     </div>
 
