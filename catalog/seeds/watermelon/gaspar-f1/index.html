@@ -32,12 +32,14 @@
 
 <!-- normalize.css -->
 <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+<link rel="stylesheet" href="styles/swiper_slider_bundle.css" type="text/css">
 
 <!-- STYLESHEET -->
 <link rel="stylesheet" href="styles/style.min.css" type="text/css">
 
 
 <!-- SCRIPTS -->
+<script src="scripts/swiper-bundle.js" defer></script>
 <script src="scripts/main.min.js" type="module" defer></script>
 
 </head>
@@ -504,83 +506,285 @@
 
                     <div class="section__content">
 
-
-
                         <div class="product">
 
-                            <div class="product__galery galery-product">
+                            <!-- Slider main container -->
+                            <div class="product__galery galery">
 
-                                <span class="galery-product__item">
-                                    <picture><source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp" type="image/webp"><img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Арбуз Гаспар F1"></picture>
-                                </span>
+                                <div class="badge">
+                                    <span class="badge__new" onclick="this.hidden = 'true'"></span>
+                                    <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+                                    <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+                                </div>
 
-                                <span class="galery-product__item">
-                                    <picture><source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp" type="image/webp"><img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Арбуз Гаспар F1"></picture>
-                                </span>
+                                <div class="galery__thumbs swiper-container">
 
-                                <span class="galery-product__item">
-                                    <picture><source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp" type="image/webp"><img src="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg" alt="Арбуз Гаспар F1"></picture>
-                                </span>
+                                    <div class="swiper-wrapper">
 
-                                <span class="galery-product__item">
-                                    <picture><source srcset="img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp" type="image/webp"><img src="img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg" alt="Арбуз Гаспар F1"></picture>
-                                </span>
+                                        <div class="swiper-slide ">
+                                            <div class="galery__item">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                <span class="galery-product__item">
-                                    <picture><source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp" type="image/webp"><img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Арбуз Гаспар F1"></picture>
-                                </span>
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
 
-                                <span class="galery-product__item">
-                                    <picture><source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp" type="image/webp"><img src="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg" alt="Арбуз Гаспар F1"></picture>
-                                </span>
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+
+
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="galery__slider swiper-container">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp"
+                                                        src="img/logo.webp" type="image/webp" class="swiper-lazy">
+
+                                                    <img data-src="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg"
+                                                        src="img/logo.png""
+                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
 
                             </div>
+
 
                             <div class="product__tools tools">
 
                                 <div class="tools__header header-tools">
 
-                                    <div class="header-tools__badge">
-                                        <div class="badge">
-                                            <span class="badge__new"></span>
-                                            <span class="badge__recommendation"></span>
-                                            <span class="badge__discount"></span>
-                                        </div>
-                                    </div>
+                                    <span class="product__name--SKU">артикул: <span>956478</span></span>
 
-                                    <div class="header-tools__product-name">
+                                    <div class="product__rating">
+                                        <span class="product__review-count">отзывов: <span>45</span></span>
+                                        <fieldset>
+                                            <input type="radio" id="star5" name="rating" value="5" />
+                                            <label for="star5" title="Превосходно">5 stars</label>
 
+                                            <input type="radio" id="star4" name="rating" value="4" />
+                                            <label for="star4" title="Отлично">4 stars</label>
 
-                                        <div class="product__name">
-                                            <span class="product__name--sort" title="Сорт продукта">Grimson Sweet</span>
-                                            <h3 class="product__name--text">Гаспар</h3>
-                                            <span class="product__name--suffics"
-                                                title="F1 – это гибридные семена первого поколения. Такие семена унаследуют от родителей с доминантными признаками все положительные характеристики сорта">F1</span>
-                                        </div>
+                                            <input type="radio" id="star3" name="rating" value="3" />
+                                            <label for="star3" title="Хорошо">3 stars</label>
 
-                                        <div class="product__rating">
-                                            <fieldset>
-                                                <input type="radio" id="star5" name="rating" value="5" />
-                                                <label for="star5" title="Превосходно">5 stars</label>
+                                            <input type="radio" id="star2" name="rating" value="2" />
+                                            <label for="star2" title="Неплохо">2 stars</label>
 
-                                                <input type="radio" id="star4" name="rating" value="4" />
-                                                <label for="star4" title="Отлично">4 stars</label>
-
-                                                <input type="radio" id="star3" name="rating" value="3" />
-                                                <label for="star3" title="Хорошо">3 stars</label>
-
-                                                <input type="radio" id="star2" name="rating" value="2" />
-                                                <label for="star2" title="Неплохо">2 stars</label>
-
-                                                <input type="radio" id="star1" name="rating" value="1" />
-                                                <label for="star1" title="Плохо">1 star</label>
-                                            </fieldset>
-                                        </div>
-
+                                            <input type="radio" id="star1" name="rating" value="1" />
+                                            <label for="star1" title="Плохо">1 star</label>
+                                        </fieldset>
 
                                     </div>
 
                                     <div class="header-tools__buttons-group">
+
                                         <div class="buttons-group">
 
                                             <button class="btn btn--transparent btn--no-text btn--favorites"
@@ -620,14 +824,30 @@
                                             </button>
 
                                         </div>
+
+
                                     </div>
 
                                 </div>
 
                                 <div class="tools__body">
 
+
+                                    <div class="product__name">
+
+                                        <h3 class="product__name--text">Арбуз Гаспар</h3>
+
+                                        <span class="product__name--suffics"
+                                            title="F1 – это гибридные семена первого поколения. Такие семена унаследуют от родителей с доминантными признаками все положительные характеристики сорта">F1</span>
+
+                                        <span class="product__name--sort" title="Сорт продукта">Grimson Sweet</span>
+
+                                    </div>
+
                                     <div class="product__short-description">
                                         <p>Арбуз на самый ранний срок</p>
+                                        <p>Рекомендуется для выращивания в пленочных туннелях(термосах) на мульче и на
+                                            грунте, для получения самой ранней продукции</p>
                                     </div>
 
                                 </div>
@@ -637,6 +857,16 @@
 
 
                                         <div class="action__choice">
+
+                                            <div class="choice-count">
+                                                <span>Количество</span>
+                                                <div class="choice-count__container">
+                                                    <button class="choice-count__decrement">-</button>
+                                                    <input class="choice-count__value" type="text" value="1">
+                                                    <button class="choice-count__increment">+</button>
+                                                </div>
+                                            </div>
+
                                             <div class="choice-stack">
                                                 <span class="product__status">В наличии</span>
 
@@ -665,14 +895,7 @@
 
                                             </div>
 
-                                            <div class="choice-count">
-                                                <span>Количество</span>
-                                                <div class="choice-count__container">
-                                                    <button class="choice-count__decrement">-</button>
-                                                    <input class="choice-count__value" type="text" value="1">
-                                                    <button class="choice-count__increment">+</button>
-                                                </div>
-                                            </div>
+
                                         </div>
 
                                         <div class="action__price">
@@ -740,9 +963,14 @@
                                             Описание</a>
                                     </li>
 
-                                    <li class="tabs-pill">
+                                    <li class="tabs-pill active">
                                         <a href="#product__attributes" class="tab-link">
                                             Характеристики</a>
+                                    </li>
+
+                                    <li class="tabs-pill">
+                                        <a href="#product__review" class="tab-link">
+                                            Отзывы <span class="product__review-count">45</span></a>
                                     </li>
 
                                 </ul>
@@ -816,6 +1044,10 @@
                                             всеми курсивных, правилами семь агентство, рот сих приставка!</p>
 
 
+                                    </div>
+
+                                    <div class="product__review" id="product__review">
+                                        раздел в разработке
                                     </div>
 
                                 </div>
