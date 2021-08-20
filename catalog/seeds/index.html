@@ -321,29 +321,27 @@
                         </div>
 
                         <div class="header-body__tools">
-                            <ul class="header-body__widgets widgets">
 
-                                <li class="widgets__item phone">
-                                    <a class="phone__link" href="tel:+79898552277">+7 (989) 855 22 77</a>
-                                </li>
+                            <div class="widget phone  grid__item grid__item--1">
+                                <a class="phone__link" href="tel:+79898552277">+7 (989) 855 22 77</a>
+                            </div>
 
-                                <li class="widgets__item feedback">
-                                    <button class="btn btn--red" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
+                            <div class="widget feedback  grid__item grid__item--2">
+                                <button class="btn btn--red" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
     <span>Заказать звонок</span>
 </button>
-                                </li>
-
-                            </ul>
-
-                            <div class="header-body__burger burger">
-                                <button class="btn btn--white btn--no-icon" id="burger-sidebar" aria-controls="sidebar"
-    aria-label="Открыть панель навигации по каталогу" data-target="sidebar__feedback">
-
-    <span>Личный кабинет</span>
-
-</button>
                             </div>
-                            <nav class="navbar">
+
+                            <div class="widget search grid__item grid__item--3">
+                                <div class="search">
+    <form>
+        <input type="search" placeholder="Поиск" aria-label="Поиск">
+        <button type="submit"></button>
+    </form>
+</div>
+                            </div>
+
+                            <nav class="navbar grid__item grid__item--navbar">
                                 <ul class="navbar__list">
                                     <li class="navbar__item">
     <a class="navbar__link" href=#catalog-category>КАТАЛОГ</a>
@@ -352,12 +350,25 @@
 </li><li class="navbar__item">
     <a class="navbar__link" href=/about/>О компании</a>
 </li><li class="navbar__item">
+    <a class="navbar__link" href=/delivery/>ДОСТАВКА</a>
+</li><li class="navbar__item">
     <a class="navbar__link" href=/payment/>ОПЛАТА</a>
 </li>
 
                                 </ul>
 
                             </nav>
+
+                            <div class="header-body__lk lk  grid__item grid__item--5">
+                                <button class="btn btn--white btn--no-icon" id="burger-sidebar" aria-controls="sidebar"
+    aria-label="Открыть панель навигации по каталогу" data-target="sidebar__feedback">
+
+    <span>Личный кабинет</span>
+
+</button>
+                            </div>
+
+
 
                         </div>
 
@@ -388,14 +399,7 @@
                                 </nav>
                             </li>
 
-                            <li class="widgets__item">
-                                <div class="search">
-    <form>
-        <input type="search" placeholder="Поиск" aria-label="Поиск">
-        <button type="submit"></button>
-    </form>
-</div>
-                            </li>
+
 
                         </ul>
 

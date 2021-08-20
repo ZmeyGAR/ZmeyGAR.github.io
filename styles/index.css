@@ -83,15 +83,7 @@ ol {
 
 .main-page .hero {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: url(../img/soya.w1693.jpg) center 35%/cover no-repeat;
-  min-height: 100vw; }
+  background: url(../img/soya.w1693.jpg) center 35%/cover no-repeat; }
   .main-page .hero::after {
     content: '';
     position: absolute;
@@ -715,9 +707,33 @@ main {
 .hero {
   font-family: "Cuprum", sans-serif;
   font-size: 1em;
-  line-height: 1em; }
+  line-height: 1em;
+  min-height: 360px; }
+  .hero__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 5vw; }
+    .hero__logo > .logo {
+      max-width: 50%;
+      margin: 0 auto; }
+      .hero__logo > .logo > .logo__link {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
   .hero__title {
     position: relative;
+    height: 160px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -725,9 +741,6 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -735,7 +748,6 @@ main {
         -ms-flex-align: center;
             align-items: center; }
     .hero__title h1 {
-      margin-top: 0;
       font-family: inherit;
       font-size: 10vw;
       font-weight: inherit;
@@ -747,6 +759,7 @@ main {
       background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), color-stop(40%, #f9fdf3), to(#f9fdf3));
       background: -o-linear-gradient(bottom, transparent 25%, #f9fdf3 40%, #f9fdf3);
       background: linear-gradient(0deg, transparent 25%, #f9fdf3 40%, #f9fdf3);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -952,16 +965,17 @@ main {
   text-transform: uppercase;
   text-align: center; }
 
-.logo__icon .shadow {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: rgba(0, 0, 0, 0.1); }
-
-.logo__icon .leaf {
-  fill: #70A027; }
-
-.logo__icon .circle {
-  fill: #E74C0A; }
+.logo__icon {
+  width: 100%;
+  height: 100%; }
+  .logo__icon .shadow {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: rgba(0, 0, 0, 0.1); }
+  .logo__icon .leaf {
+    fill: #70A027; }
+  .logo__icon .circle {
+    fill: #E74C0A; }
 
 .logo__title {
   width: 100%; }
@@ -3009,8 +3023,12 @@ main {
     border-radius: 20% 80% 20% 80% / 80% 20% 80% 20%; } }
 
 @media (min-width: 424.98px) {
-    .main-page .hero {
+    .hero {
       min-height: 424.98px; }
+      .hero__logo {
+        height: 160px; }
+      .hero__title {
+        height: 185px; }
         .catalog--grid > li {
           max-width: 45%; }
       .footer__container {
@@ -3026,7 +3044,15 @@ main {
         .payment-page__body .header {
           display: inherit; }
     .main-page .hero {
-      min-height: 579px; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background: url(../img/soya.w1693.jpg) top/cover no-repeat;
+      min-height: calc(330px * 2.3); }
       .section__title {
         font-size: 2.7em; }
       .section__description {
@@ -3118,6 +3144,14 @@ main {
         display: none; }
         .hero__title h1 {
           margin: 0; }
+    .hero {
+      min-height: 579px; }
+      .hero__logo {
+        display: none; }
+      .hero__title {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto; }
         .header.fixed .widget.feedback {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -3171,6 +3205,8 @@ main {
       padding: 2.7em 0; } }
 
 @media (min-width: 1023.98px) {
+    .main-page .hero {
+      background: url(../img/soya.w1693.jpg) center top/cover no-repeat; }
             .header.fixed .header-body__logo .logo__link .logo__title {
               display: initial; }
         .header.fixed .header-body__logo {
@@ -3217,6 +3253,8 @@ main {
           max-width: 23%; } }
 
 @media (min-width: 1439.98px) {
+    .main-page .hero {
+      background: url(../img/soya.w1693.jpg) center 38%/cover no-repeat; }
         .hero__title h1 {
           font-size: 8vw; }
         .header.fixed .header-body__tools {
@@ -3556,7 +3594,7 @@ main {
  @media (min-width: 767.98px){
 
 @supports (-webkit-appearance:none){
-
+.main-page .hero{background:url(../img/soya.w1693.webp) top/cover no-repeat}
 }
 
 }
@@ -3564,7 +3602,7 @@ main {
  @media (min-width: 1023.98px){
 
 @supports (-webkit-appearance:none){
-
+.main-page .hero{background:url(../img/soya.w1693.webp) center top/cover no-repeat}
 }
 
 }
@@ -3572,7 +3610,7 @@ main {
  @media (min-width: 1439.98px){
 
 @supports (-webkit-appearance:none){
-
+.main-page .hero{background:url(../img/soya.w1693.webp) center 38%/cover no-repeat}
 }
 
 }
