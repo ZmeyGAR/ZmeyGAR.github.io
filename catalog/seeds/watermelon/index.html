@@ -273,7 +273,7 @@
 
                     <div class="header__head header-head">
     <ul class="header-head__widgets widgets">
-        <li class="widgets__item">
+        <li class="widgets__item widgets__item--right">
             <div class="socials">
     <ul class="socials__list ">
         <li class="socials__item">
@@ -377,7 +377,7 @@
                     <div class="header__footer header-footer">
 
                         <ul class="header-footer__widgets widgets">
-                            <li class="widgets__item">
+                            <li class="widgets__item widgets__item--left">
                                 <nav class="breadcrumbs" aria-label="breadcrumbs">
                                     <ol class="breadcrumbs__list">
 
@@ -414,9 +414,7 @@
 
             </header>
 
-            <!-- <div class="hero__title">
-                <h1>Успешное земледелие</h1>
-            </div> -->
+
 
         </section>
 
@@ -508,7 +506,11 @@
 
                                 <li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
@@ -521,22 +523,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
+        <span class="goods__description">Арбуз на самый ранний срок</span>
 
-        <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
-
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -563,7 +633,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
@@ -576,22 +650,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -618,7 +760,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
@@ -631,22 +777,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -673,7 +887,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
@@ -686,22 +904,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -728,7 +1014,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
@@ -741,22 +1031,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -783,7 +1141,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
@@ -796,22 +1158,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -838,7 +1268,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
@@ -851,22 +1285,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -893,7 +1395,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
@@ -906,22 +1412,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -948,7 +1522,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
@@ -961,22 +1539,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -1003,7 +1649,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
@@ -1016,22 +1666,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -1058,7 +1776,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
@@ -1071,22 +1793,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
@@ -1113,7 +1903,11 @@
 
 </li><li class="goods__item" aria-haspopup="true">
     <a href="/catalog/seeds/watermelon/gaspar-f1/" class="goods__link">
-        <span class="goods__badge"></span>
+        <div class="goods__badge badge">
+            <span class="badge__new" onclick="this.hidden = 'true'"></span>
+            <span class="badge__recommendation" onclick="this.hidden = 'true'"></span>
+            <span class="badge__discount" onclick="this.hidden = 'true'"></span>
+        </div>
         <picture>
             <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
@@ -1126,22 +1920,90 @@
             <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
+        <span class="goods__name">Гаспар F1</span>
+
+
     </a>
     <div class="goods__info">
 
-        <span class="goods__name"><a href="/catalog/seeds/watermelon/gaspar-f1/">Гаспар F1</a></span>
-
         <span class="goods__description">Вкусный спелый сладкий вах вах какой, пальчики оближешь и сожрёшь</span>
 
-        <button class="btn btn--white"><span>подробнее</span></button>
     </div>
     <div class="goods__tools">
-        <span class="goods__stack">500 семян</span>
-        <span class="goods__comment">В наличии</span>
+        <form class="choice-stack">
+            <table>
+                <tbody>
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-1" name="stack" value="1000" checked />
+
+                            <label for="stack-1">
+                                <span class="stack-count">500</span>
+                                <span class="stack__var">гр.</span>
+                            </label>
+
+                        </td>
+
+                        <td class="choice-stack__price">
+
+                            <span class="price">1 000 </span>
+                            <span class="currency">&#x20bd;</span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-2" name="stack" value="20000" />
+
+                            <label for="stack-2">
+
+                                <span class="stack-count">10 000</span>
+                                <span class="stack__var">сем</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">20 000 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="choice-stack__input">
+
+                            <input type="radio" id="stack-3" name="stack" value="20000" />
+
+                            <label for="stack-3">
+
+                                <span class="stack-count">3</span>
+                                <span class="stack__var">шт</span>
+
+                            </label>
+                        </td>
+
+                        <td class="choice-stack__price">
+                            <span class="price">6 </span>
+                            <span class="currency">&#x20bd;</span>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </form>
+
     </div>
     <div class="goods__action">
-        <span class="goods__price">1000 <span class="currency"> &#x20bd;</span></span>
-        <button class="btn btn--cart goods__to-cart" onclick="this.classList.toggle('added')">
+        <button class="btn btn--cart btn--fluid goods__to-cart" onclick="this.classList.toggle('added')">
             <i class="btn__icon">
                 <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" rx="2" />
