@@ -2138,9 +2138,17 @@ main {
           border-bottom-left-radius: 10px;
           border-width: 1px;
           background: rgba(204, 204, 204, 0.2);
-          color: #f84c00;
+          color: #4b3221;
           font-size: 100%;
-          line-height: 1em; }
+          line-height: 1.3em; }
+      .article--page .article__body .article__title {
+        max-width: 50%;
+        padding: 1em 0; }
+      .article--page .article__body .article__subtitle {
+        max-width: 50%; }
+      .article--page .article__body ul li {
+        -webkit-box-shadow: 5px 5px 5px 0 #ccc;
+                box-shadow: 5px 5px 5px 0 #ccc; }
   .article__container {
     padding: 0 0 4% 4%;
     margin-top: 4%;
@@ -2185,6 +2193,8 @@ main {
   .article__title {
     margin-top: 0;
     text-transform: uppercase; }
+  .article__subtitle {
+    max-width: 50%; }
   .article__description {
     position: relative;
     min-height: 180px;
