@@ -2147,6 +2147,7 @@ main {
       .article--page .article__body .article__subtitle {
         max-width: 50%; }
       .article--page .article__body ul li {
+        min-height: 450px;
         -webkit-box-shadow: 5px 5px 5px 0 #ccc;
                 box-shadow: 5px 5px 5px 0 #ccc; }
   .article__container {
