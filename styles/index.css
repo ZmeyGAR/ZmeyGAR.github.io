@@ -499,9 +499,7 @@ main {
             flex: 1 1 auto;
     width: 100%;
     height: 100%;
-    padding-top: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; }
+    padding-top: 20px; }
     .sidebar__body .sidebar__page-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -628,6 +626,14 @@ main {
       left: 0;
       width: 100%;
       padding-bottom: 100px; }
+    .sidebar__body::-webkit-scrollbar {
+      width: 1px; }
+    .sidebar__body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+              box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+    .sidebar__body::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey; }
   .sidebar__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3594,14 +3600,6 @@ main {
         -webkit-box-flex: 1;
             -ms-flex: 1 1 auto;
                 flex: 1 1 auto; }
-        .sidebar__body::-webkit-scrollbar {
-          width: 1px; }
-        .sidebar__body::-webkit-scrollbar-track {
-          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-                  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
-        .sidebar__body::-webkit-scrollbar-thumb {
-          background-color: darkgrey;
-          outline: 1px solid slategrey; }
       .sidebar .mobile_hidden {
         display: -webkit-box;
         display: -ms-flexbox;
