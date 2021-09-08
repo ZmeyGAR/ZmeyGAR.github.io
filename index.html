@@ -77,7 +77,7 @@
                     <div class="sidebar__profile mobile_hidden">
                         <div class="profile">
                             <div class="profile__avatar">
-                                <picture><source srcset="img/user_placeholder.webp" type="image/webp"><img src="img/user_placeholder.jpg" alt="ваш аватар"></picture>
+                                <picture><source srcset="image/user_placeholder.webp" type="image/webp"><img src="image/user_placeholder.jpg" alt="ваш аватар"></picture>
                             </div>
                             <div class="profile__info user">
                                 <span class="user__name">Лагутин Виталий</span>
@@ -205,7 +205,577 @@
 
                     <div class="sidebar__cart mobile_hidden desctop_hidden">
 
-                        раздел в разработке
+                        <div id="cart" class="mini-cart">
+
+                            <div data-loading-text="{{ text_loading }}" class="mini-cart__title">
+                                <span id="cart-total">Товаров: 43 (7923.00р.)</span>
+                            </div>
+
+                            <ul class="mini-cart__list">
+                                <!-- {% if products or vouchers %} -->
+                                <li class="mini-cart__goods">
+
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+
+                                    <table class="goods-cart">
+                                        <!-- {% for product in products %} -->
+                                        <tr class="goods-cart__info">
+
+                                            <td class="goods-cart__btn-remove">
+                                                <button type="button" onclick="" title="{{ button_remove }}"
+                                                    class="btn btn--transparent btn--no-text remove">
+                                                    <span class="remove__icon"></span>
+                                                </button>
+                                            </td>
+
+                                            <td class="goods-cart__image">
+
+                                                <!-- {% if product.thumb %}  -->
+                                                <a href="{{ product.href }}">
+                                                    <picture><source srcset="image/catalog/seeds/melon.h245.webp" type="image/webp"><img src="image/catalog/seeds/melon.h245.jpg"
+                                                        alt="{{ product.name }}" title="{{ product.name }}"
+                                                        class="img-thumbnail" /></picture>
+                                                </a>
+                                                <!-- {% endif %} -->
+
+                                            </td>
+
+                                            <td class="goods-cart__name">
+
+                                                <a href="{{ product.href }}">
+                                                    <!-- {{ product.name }} -->
+                                                    Морковь CARC-757
+                                                </a>
+
+                                                <!-- {% if product.option %} -->
+                                                <!-- {% for option in product.option %} -->
+
+                                                <!-- - <small>{{ option.name }} {{ option.value }}</small> -->
+                                                <small class="goods-cart__option"> - Фасовка 10 000 сем</small>
+                                                <!-- {% endfor %} -->
+                                                <!-- {% endif %} -->
+
+
+                                            </td>
+
+
+                                            <td class="goods-cart__quantity">
+                                                <!-- {{ product.quantity }} -->
+                                                <small class="goods-cart__quantity">x10</small>
+                                            </td>
+
+                                            <td class="goods-cart__total-price">
+                                                <!-- {{ product.total }} -->
+                                                1200p
+                                            </td>
+
+                                        </tr>
+
+
+                                        <!-- {% endfor %} -->
+                                    </table>
+
+                                </li>
+
+                                <li class="mini-cart__totals">
+                                    <div>
+                                        <table>
+                                            <!-- {% for total in totals %} -->
+                                            <tr>
+                                                <td>
+                                                    <!-- <strong>{{ total.title }}</strong> -->
+                                                    Итого:
+                                                </td>
+                                                <td>
+                                                    <!-- {{ total.text }} -->
+                                                    1200.00p
+                                                </td>
+                                            </tr>
+                                            <!-- {% endfor %} -->
+                                        </table>
+
+                                        <div class="mini-cart__links">
+
+                                            <a class="btn btn--white" href="{{ cart }}">
+                                                <!-- {{ text_cart }} -->
+                                                <span>Посмотреть корзину</span>
+                                            </a>
+
+                                            <a class="btn btn--red" href="{{ checkout }}">
+                                                <!-- {{ text_checkout }} -->
+                                                <span>Оформление заказа</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <!-- {% else %} -->
+                                <!-- <li>
+                                    <p class="text-center">{{ text_empty }}</p>
+                                </li> -->
+                                <!-- {% endif %} -->
+                            </ul>
+                        </div>
 
                     </div>
 
@@ -453,19 +1023,19 @@
                         <a href="catalog/seeds/" class="category__link" for="seeds">
                             <picture>
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/seeds/seeds.h352.webp 1x, img/catalog/seeds/seeds@2x.webp 2x"
+                                    srcset="image/catalog/seeds/seeds.h352.webp 1x, image/catalog/seeds/seeds@2x.webp 2x"
                                     type="image/webp">
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/seeds/seeds.h352.jpg 1x, img/catalog/seeds/seeds@2x.jpg 2x"
+                                    srcset="image/catalog/seeds/seeds.h352.jpg 1x, image/catalog/seeds/seeds@2x.jpg 2x"
                                     type="image/jpg">
 
                                 <source
-                                    srcset="img/catalog/seeds/seeds.h245.webp 1x,img/catalog/seeds/seeds.h352.webp 2x"
+                                    srcset="image/catalog/seeds/seeds.h245.webp 1x,image/catalog/seeds/seeds.h352.webp 2x"
                                     type="image/webp">
-                                <source srcset="img/catalog/seeds/seeds.h245.jpg 1x,img/catalog/seeds/seeds.h352.jpg 2x"
+                                <source srcset="image/catalog/seeds/seeds.h245.jpg 1x,image/catalog/seeds/seeds.h352.jpg 2x"
                                     type="image/jpg">
 
-                                <img src="img/catalog/seeds/seeds.h245.jpg" alt="Семена">
+                                <img src="image/catalog/seeds/seeds.h245.jpg" alt="Семена">
                             </picture>
                             <span>Семена</span>
                         </a>
@@ -475,20 +1045,20 @@
                             <picture>
 
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/fertilizer/fertilizer.h352.webp 1x, img/catalog/fertilizer/fertilizer@2x.webp 2x"
+                                    srcset="image/catalog/fertilizer/fertilizer.h352.webp 1x, image/catalog/fertilizer/fertilizer@2x.webp 2x"
                                     type="image/webp">
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/fertilizer/fertilizer.h352.jpg 1x, img/catalog/fertilizer/fertilizer@2x.jpg 2x"
+                                    srcset="image/catalog/fertilizer/fertilizer.h352.jpg 1x, image/catalog/fertilizer/fertilizer@2x.jpg 2x"
                                     type="image/jpg">
 
                                 <source
-                                    srcset="img/catalog/fertilizer/fertilizer.h245.webp 1x,img/catalog/fertilizer/fertilizer.h352.webp 2x"
+                                    srcset="image/catalog/fertilizer/fertilizer.h245.webp 1x,image/catalog/fertilizer/fertilizer.h352.webp 2x"
                                     type="image/webp">
                                 <source
-                                    srcset="img/catalog/fertilizer/fertilizer.h245.jpg 1x,img/catalog/fertilizer/fertilizer.h352.jpg 2x"
+                                    srcset="image/catalog/fertilizer/fertilizer.h245.jpg 1x,image/catalog/fertilizer/fertilizer.h352.jpg 2x"
                                     type="image/jpg">
 
-                                <img src="img/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
+                                <img src="image/catalog/fertilizer/fertilizer.h245.jpg" alt="удобрения">
 
                             </picture>
                             <span>удобрения</span>
@@ -499,20 +1069,20 @@
                             <picture>
 
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/chemistry/chemistry.h352.webp 1x, img/catalog/chemistry/chemistry@2x.webp 2x"
+                                    srcset="image/catalog/chemistry/chemistry.h352.webp 1x, image/catalog/chemistry/chemistry@2x.webp 2x"
                                     type="image/webp">
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/chemistry/chemistry.h352.jpg 1x, img/catalog/chemistry/chemistry@2x.jpg 2x"
+                                    srcset="image/catalog/chemistry/chemistry.h352.jpg 1x, image/catalog/chemistry/chemistry@2x.jpg 2x"
                                     type="image/jpg">
 
                                 <source
-                                    srcset="img/catalog/chemistry/chemistry.h245.webp 1x,img/catalog/chemistry/chemistry.h352.webp 2x"
+                                    srcset="image/catalog/chemistry/chemistry.h245.webp 1x,image/catalog/chemistry/chemistry.h352.webp 2x"
                                     type="image/webp">
                                 <source
-                                    srcset="img/catalog/chemistry/chemistry.h245.jpg 1x,img/catalog/chemistry/chemistry.h352.jpg 2x"
+                                    srcset="image/catalog/chemistry/chemistry.h245.jpg 1x,image/catalog/chemistry/chemistry.h352.jpg 2x"
                                     type="image/jpg">
 
-                                <img src="img/catalog/chemistry/chemistry.h245.jpg" alt="средства защиты">
+                                <img src="image/catalog/chemistry/chemistry.h245.jpg" alt="средства защиты">
                             </picture>
                             <span>средства защиты</span>
                         </a>
@@ -522,20 +1092,20 @@
                             <picture>
 
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/membrane/membrane.h352.webp 1x, img/catalog/membrane/membrane@2x.webp 2x"
+                                    srcset="image/catalog/membrane/membrane.h352.webp 1x, image/catalog/membrane/membrane@2x.webp 2x"
                                     type="image/webp">
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/membrane/membrane.h352.jpg 1x, img/catalog/membrane/membrane@2x.jpg 2x"
+                                    srcset="image/catalog/membrane/membrane.h352.jpg 1x, image/catalog/membrane/membrane@2x.jpg 2x"
                                     type="image/jpg">
 
                                 <source
-                                    srcset="img/catalog/membrane/membrane.h245.webp 1x,img/catalog/membrane/membrane.h352.webp 2x"
+                                    srcset="image/catalog/membrane/membrane.h245.webp 1x,image/catalog/membrane/membrane.h352.webp 2x"
                                     type="image/webp">
                                 <source
-                                    srcset="img/catalog/membrane/membrane.h245.jpg 1x,img/catalog/membrane/membrane.h352.jpg 2x"
+                                    srcset="image/catalog/membrane/membrane.h245.jpg 1x,image/catalog/membrane/membrane.h352.jpg 2x"
                                     type="image/jpg">
 
-                                <img src="img/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
+                                <img src="image/catalog/membrane/membrane.h245.jpg" alt="укрывной материал">
                             </picture>
                             <span>укрывной материал</span>
                         </a>
@@ -545,19 +1115,19 @@
                             <picture>
 
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/tools/tools.h352.webp 1x, img/catalog/tools/tools@2x.webp 2x"
+                                    srcset="image/catalog/tools/tools.h352.webp 1x, image/catalog/tools/tools@2x.webp 2x"
                                     type="image/webp">
                                 <source media="(min-width: 2559px)"
-                                    srcset="img/catalog/tools/tools.h352.jpg 1x, img/catalog/tools/tools@2x.jpg 2x"
+                                    srcset="image/catalog/tools/tools.h352.jpg 1x, image/catalog/tools/tools@2x.jpg 2x"
                                     type="image/jpg">
 
                                 <source
-                                    srcset="img/catalog/tools/tools.h245.webp 1x,img/catalog/tools/tools.h352.webp 2x"
+                                    srcset="image/catalog/tools/tools.h245.webp 1x,image/catalog/tools/tools.h352.webp 2x"
                                     type="image/webp">
-                                <source srcset="img/catalog/tools/tools.h245.jpg 1x,img/catalog/tools/tools.h352.jpg 2x"
+                                <source srcset="image/catalog/tools/tools.h245.jpg 1x,image/catalog/tools/tools.h352.jpg 2x"
                                     type="image/jpg">
 
-                                <img src="img/catalog/tools/tools.h245.jpg" alt="инструмент">
+                                <img src="image/catalog/tools/tools.h245.jpg" alt="инструмент">
 
                             </picture>
                             <span>инструмент</span>
@@ -596,15 +1166,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -728,15 +1298,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -860,15 +1430,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -992,15 +1562,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1124,15 +1694,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1256,15 +1826,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1388,15 +1958,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1520,15 +2090,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1652,15 +2222,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1784,15 +2354,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1916,15 +2486,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2048,15 +2618,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2180,15 +2750,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2332,7 +2902,7 @@
             <div class="swiper-wrapper">
 
                 <section class="swiper-slide blog__blog-section blog-section"
-                    style="background:linear-gradient(to bottom, transparent 70%, black), url(img/blog/insect/aphid.jpg) 0 0/cover no-repeat;">
+                    style="background:linear-gradient(to bottom, transparent 70%, black), url(image/blog/insect/aphid.jpg) 0 0/cover no-repeat;">
 
                     <div class="blog-section__info">
                         <h3 class="blog-section__title">Огородные вредители-полифаги</h3>
@@ -2351,7 +2921,7 @@
                                 <div class="article__container">
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/aphid.webp" type="image/webp"><img src="img/blog/insect/aphid.jpg" alt="тля"></picture>
+                                            <picture><source srcset="image/blog/insect/aphid.webp" type="image/webp"><img src="image/blog/insect/aphid.jpg" alt="тля"></picture>
                                         </div>
 
                                     </a>
@@ -2380,7 +2950,7 @@
 
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/nematode.webp" type="image/webp"><img src="img/blog/insect/nematode.jpg" alt="галовая нематода"></picture>
+                                            <picture><source srcset="image/blog/insect/nematode.webp" type="image/webp"><img src="image/blog/insect/nematode.jpg" alt="галовая нематода"></picture>
                                         </div>
 
                                     </a>
@@ -2411,7 +2981,7 @@
 
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/naked_slugs.webp" type="image/webp"><img src="img/blog/insect/naked_slugs.jpg" alt="голые слизни"></picture>
+                                            <picture><source srcset="image/blog/insect/naked_slugs.webp" type="image/webp"><img src="image/blog/insect/naked_slugs.jpg" alt="голые слизни"></picture>
                                         </div>
 
                                     </a>
@@ -2440,7 +3010,7 @@
                                 <div class="article__container">
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/wireworm.webp" type="image/webp"><img src="img/blog/insect/wireworm.jpg" alt="Проволочник - Жук-щелкун и
+                                            <picture><source srcset="image/blog/insect/wireworm.webp" type="image/webp"><img src="image/blog/insect/wireworm.jpg" alt="Проволочник - Жук-щелкун и
                                         его личинка"></picture>
                                         </div>
 
@@ -2475,7 +3045,7 @@
                 </section>
 
                 <section class="swiper-slide blog__blog-section blog-section"
-                    style="background: linear-gradient(to bottom, transparent 70%, black) ,url(img/blog/insect/aphid.jpg) 0 0/cover no-repeat;">
+                    style="background: linear-gradient(to bottom, transparent 70%, black) ,url(image/blog/insect/aphid.jpg) 0 0/cover no-repeat;">
 
                     <div class="blog-section__info">
 
@@ -2501,7 +3071,7 @@
                                 <div class="article__container">
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/aphid.webp" type="image/webp"><img src="img/blog/insect/aphid.jpg" alt="тля"></picture>
+                                            <picture><source srcset="image/blog/insect/aphid.webp" type="image/webp"><img src="image/blog/insect/aphid.jpg" alt="тля"></picture>
                                         </div>
 
                                     </a>
@@ -2530,7 +3100,7 @@
 
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/nematode.webp" type="image/webp"><img src="img/blog/insect/nematode.jpg" alt="галовая нематода"></picture>
+                                            <picture><source srcset="image/blog/insect/nematode.webp" type="image/webp"><img src="image/blog/insect/nematode.jpg" alt="галовая нематода"></picture>
                                         </div>
 
                                     </a>
@@ -2561,7 +3131,7 @@
 
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/naked_slugs.webp" type="image/webp"><img src="img/blog/insect/naked_slugs.jpg" alt="голые слизни"></picture>
+                                            <picture><source srcset="image/blog/insect/naked_slugs.webp" type="image/webp"><img src="image/blog/insect/naked_slugs.jpg" alt="голые слизни"></picture>
                                         </div>
 
                                     </a>
@@ -2590,7 +3160,7 @@
                                 <div class="article__container">
                                     <a href="#" class="article__link article__link--img" title="перейти к статье">
                                         <div class="article__img">
-                                            <picture><source srcset="img/blog/insect/wireworm.webp" type="image/webp"><img src="img/blog/insect/wireworm.jpg" alt="Проволочник - Жук-щелкун и
+                                            <picture><source srcset="image/blog/insect/wireworm.webp" type="image/webp"><img src="image/blog/insect/wireworm.jpg" alt="Проволочник - Жук-щелкун и
                                         его личинка"></picture>
                                         </div>
 

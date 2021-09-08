@@ -73,7 +73,7 @@
                     <div class="sidebar__profile mobile_hidden">
                         <div class="profile">
                             <div class="profile__avatar">
-                                <picture><source srcset="img/user_placeholder.webp" type="image/webp"><img src="img/user_placeholder.jpg" alt="ваш аватар"></picture>
+                                <picture><source srcset="image/user_placeholder.webp" type="image/webp"><img src="image/user_placeholder.jpg" alt="ваш аватар"></picture>
                             </div>
                             <div class="profile__info user">
                                 <span class="user__name">Лагутин Виталий</span>
@@ -531,6 +531,69 @@
 
                     <div class="section__content">
 
+                        <div class="catalog__tools">
+
+                            <!-- {# Сортировка #} -->
+                            <div class="sort">
+
+
+                                <!-- <label class="sort__label" for="input-sort">{{ text_sort }}</label> -->
+                                <label class="sort__label" for="input-sort">Сортировать </label>
+
+                                <select id="input-sort" class="sort__select" onchange="location = this.value;">
+
+                                    <!-- {% for sorts in sorts %} -->
+
+                                    <!-- {% if sorts.value == '%s-%s'|format(sort, order) %} -->
+
+                                    <!-- <option value="{{ sorts.href }}" selected="selected">{{ sorts.text }}</option> -->
+                                    <option value="{{ sorts.href }}" selected="selected">По умолчанию</option>
+                                    <option value="{{ sorts.href }}"">От А - Я</option>
+                                    <option value=" {{ sorts.href }}">От Я - А</option>
+                                    <option value="{{ sorts.href }}">и тд</option>
+
+                                    <!-- {% else %} -->
+
+                                    <option value="{{ sorts.href }}">{{ sorts.text }}</option>
+
+                                    <!-- {% endif %} -->
+
+                                    <!-- {% endfor %} -->
+
+                                </select>
+
+                            </div>
+                            <!-- {# Сортировка #} -->
+
+                            <!-- {# лимит показа #} -->
+                            <div class="limits">
+
+                                <label class="limits__label" for="input-limit">Показать </label>
+
+                                <select id="input-limit" class="limits__select" onchange="location = this.value;">
+
+                                    <!-- {% for limits in limits %} -->
+
+                                    <!-- {% if limits.value == limit %} -->
+
+                                    <option value="{{ limits.href }}" selected="selected">1</option>
+                                    <option value="{{ limits.href }}">10</option>
+
+                                    <!-- {% else %} -->
+
+                                    <option value="{{ limits.href }}">{{ limits.text }}</option>
+
+
+                                    <!-- {% endif %} -->
+
+                                    <!-- {% endfor %} -->
+
+                                </select>
+
+                            </div>
+                            <!-- {# лимит показа #} -->
+                        </div>
+
                         <div class="catalog">
 
                             <ul class="catalog--grid goods">
@@ -543,15 +606,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -670,15 +733,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -797,15 +860,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -924,15 +987,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1051,15 +1114,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1178,15 +1241,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1305,15 +1368,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1432,15 +1495,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1559,15 +1622,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1686,15 +1749,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1813,15 +1876,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -1940,15 +2003,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2065,7 +2128,27 @@
                             </ul>
                         </div>
 
+                        <div class="catalog__pagination">
 
+                            <div class="result">Показано с 1 по 5 из 6 (всего 2
+                                страниц)</div>
+
+                            <ul class="pagination">
+                                <li class="active"><span>1</span></li>
+                                <li><a
+                                        href="http://defaulttheme/index.php?route=product/product/review&amp;product_id=41&amp;page=2">2</a>
+                                </li>
+                                <li><a
+                                        href="http://defaulttheme/index.php?route=product/product/review&amp;product_id=41&amp;page=2">&gt;</a>
+                                </li>
+                                <li><a
+                                        href="http://defaulttheme/index.php?route=product/product/review&amp;product_id=41&amp;page=2">&gt;|</a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
 
                     </div>
 
@@ -2092,15 +2175,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2224,15 +2307,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2356,15 +2439,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2488,15 +2571,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2620,15 +2703,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2752,15 +2835,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -2884,15 +2967,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -3016,15 +3099,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -3148,15 +3231,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -3280,15 +3363,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -3412,15 +3495,15 @@
             <span class="badge__discount" onclick="this.hidden = 'true'"></span>
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_3.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_3.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -3544,15 +3627,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1_2@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
@@ -3676,15 +3759,15 @@
             
         </div>
         <picture>
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.webp 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.webp 2x"
                 type="image/webp">
-            <source media="(min-width: 2559px)" srcset="img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, img/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
+            <source media="(min-width: 2559px)" srcset="image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 1x, image/catalog/seeds/watermelon/gaspar-f1@2x.jpg 2x"
                 type="image/jpg">
 
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
-            <source srcset="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,img/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.webp 2x" type="image/webp">
+            <source srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg 1x,image/catalog/seeds/watermelon/gaspar-f1.h352.jpg 2x" type="image/jpg">
 
-            <img src="img/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
+            <img src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg" alt="Гаспар F1">
         </picture>
 
         <span class="goods__name">Гаспар F1</span>
