@@ -63,7 +63,7 @@
 
 
 
-        <aside class="sidebar" id="sidebar" role="menu">
+        <aside class="sidebar open" id="sidebar" role="menu">
 
             <div class="sidebar__close">
                 <button class="close" id="sidebar-close" aria-controls="sidebar"
@@ -173,21 +173,46 @@
                     </div>
 
                     <div class="sidebar__feedback mobile_hidden desctop_hidden">
-                        <div class="phone-contact">
-                            <div class="phone-contact__logo">
-                                <picture><source srcset="icons/logo_1.webp" type="image/webp"><img src="icons/logo_1.png" alt="магазин УСПЕХ"></picture>
-                            </div>
+                        <div class="sidebar__feedback-container">
 
-                            <div class="phone-contact__link">
-                                <div>Магазин УСПЕХ</div>
-                                <a class="phone phone--no-icon" href="tel:+79898552277">+7 (989) 855 22 77</a>
-                            </div>
-                        </div>
+                            <div class="phone-contact">
+                                <div class="phone-contact__logo logo logo--no-text">
+                                    <a href="/" class="logo__link" aria-label="Ссылка на главную страницу" title="Вернуться на главную страницу">
+    <svg class="logo__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="-50 100 1050 654" xml:space="preserve">
+        <path class="shadow" d="M874.84,169.63c-2.53,62.96-31.32,119.91-80.68,155.34c-41.13,29.42-84.79,40.81-124.34,55.05
+			c46.19-6.01,94.6-16.14,137.31-45.88c62.33-42.71,114.21-108.83,130.98-170.85C921.03,161.72,892.87,167.73,874.84,169.63
+			L874.84,169.63z" />
+        <path class="leaf" d="M511.32,449.31l43.34-40.5l18.98-17.4c25.31-23.73,51.25-46.82,76.56-70.24
+			c33.54-30.69,70.87-55.05,107.25-81.63c31.95-23.41,56.95-47.77,75.3-82.89c1.27-2.53-6.33,5.06-6.96,6.01
+			c-6.01,8.23-12.02,15.82-19.3,23.41c-15.5,15.5-34.49,28.16-53.15,39.55c-40.5,25.31-81.31,49.04-116.11,82.26
+			c-24.36,23.41-48.72,49.67-72.77,74.03l-18.03,18.35l-41.76,42.08l-31.64,31.95l-1.27,6.01l6.64-0.63L511.32,449.31z
+			M538.21,393.94l46.51-52.2c-2.85-72.13,43.03-124.97,105.99-153.13c81.94-36.7,140.79-58.53,177.17-96.81
+			c24.04,89.85-1.58,184.77-69.92,233.17c-65.49,46.82-147.75,61.06-189.51,69.29c-19.62,3.8-34.49,11.71-48.09,21.51
+			c1.27,1.9,2.53,3.48,3.8,5.38c31.32,48.09,17.4,112-30.37,143.32c-48.09,31.01-112,17.4-143.32-30.69
+			c-31.01-47.77-17.4-112,30.69-143C457.85,366.73,504.67,369.26,538.21,393.94L538.21,393.94z" />
+        <path class="circle" d="M476.2,238.6c36.7,0,71.82,8.23,102.82,23.41c-7.28,16.14-12.34,33.54-15.19,51.89
+			c-25.94-13.92-56-22.15-87.64-22.15c-50.94,0-97.13,20.56-130.35,54.1c-33.54,33.22-54.1,79.41-54.1,130.35
+			s20.56,96.81,54.1,130.35c33.22,33.22,79.41,53.78,130.35,53.78c50.94,0,96.81-20.56,130.35-53.78
+			c33.22-33.54,53.78-79.41,53.78-130.35c0-22.15-3.8-43.66-11.07-63.28c16.14-3.48,33.54-7.91,51.89-13.29
+			c8.23,24.04,12.66,49.67,12.66,76.56c0,65.49-26.58,124.97-69.6,168c-43.03,43.03-102.51,69.6-168,69.6
+			c-65.81,0-124.97-26.58-168-69.6c-43.03-43.03-69.6-102.51-69.6-168c0-65.81,26.58-124.97,69.6-168S410.39,238.6,476.2,238.6
+			L476.2,238.6z" />
+    </svg>
+    <span class="logo__title">Успех</span>
+    <span class="logo__text">Успешное земледелие</span>
+</a>
+                                </div>
 
-                        <button class="btn btn--red" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
+                                <div class="phone-contact__link">
+
+                                    <a class="phone phone--no-icon" href="tel:+79898552277">+7 (989) 855 22 77</a>
+                                </div>
+                            </div>
+                            <button class="btn btn--red" id="feedback" aria-controls="" aria-labelledby="Заказать звонок">
     <span>Заказать звонок</span>
 </button>
-                        <div class="socials">
+                            <div class="socials">
     <ul class="socials__list ">
         <li class="socials__item">
             <a href="https://instagram.com/magazin_uspeh_kurganinsk" class="socials__item--insta"></a>
@@ -200,7 +225,11 @@
         </li>
     </ul>
 </div>
-                        <a class="phone phone--no-text phone--icon-pulse" href="tel:+79898552277">+7 (989) 855 22 77</a>
+                            <a class="phone phone--no-text phone--icon-pulse" href="tel:+79898552277">+7 (989) 855 22
+                                77</a>
+
+                        </div>
+
                     </div>
 
                     <div class="sidebar__cart mobile_hidden desctop_hidden">
@@ -1007,6 +1036,217 @@
 
         </section>
         <main>
+
+            <section class="section section--separate cart" id="checkout-cart">
+    <div class="section__container __container">
+        <h2 class="section__title">
+            Корзина покупок (70.00кг)
+            <!-- {{ heading_title }}
+                {% if weight %}
+                &nbsp;({{ weight }})
+                {% endif %} -->
+        </h2>
+    </div>
+
+    <div class="section__container __container">
+
+        <div class="section__content">
+
+            <div class="cart__content">
+                <!-- <div>
+                <{% if attention %}
+            <div class="alert alert-info">
+                <i class="fa fa-info-circle"></i>
+                {{ attention }}
+                Необходимо <a href="%s">Войти в Личный кабинет</a> или <a href="%s">создать учетную запись</a> для просмотра цен!
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+            {% endif %}
+
+
+            {% if success %}
+            <div class="alert alert-success alert-dismissible">
+                <i class="fa fa-check-circle"></i>
+                {{ success }}
+                Корзина покупок обновлена
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+            {% endif %}
+
+
+            {% if error_warning %}
+            <div class="alert alert-danger alert-dismissible">
+                <i class="fa fa-exclamation-circle"></i>
+                Товары, отмеченные ***, недоступны в нужном количестве или отсутствуют на складе!
+                {{ error_warning }}
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+            {% endif %}
+            </div> -->
+
+                <!-- {{ column_left }} -->
+                <!-- {{ content_top }} -->
+
+                <form action="{{ action }}" method="post" enctype="multipart/form-data" class="cart__form">
+
+                    <div class="product-cart">
+
+                        <div class="product-cart__body">
+
+                            <div class="product-cart__image">
+                                <a href="#">
+                                    <picture>
+                                        <source src="image/catalog/seeds/melon.h245.webp" type="image/webp">
+                                        <img src="image/catalog/seeds/melon.h245.jpg" alt="Изображение">
+                                    </picture>
+                                </a>
+
+                            </div>
+
+                            <div class="product-cart__name">
+                                Морковь CARC-757
+                                <small>- артикул: Product 17</small>
+                                <small>- Фасовка: 20 000сем</small>
+                            </div>
+
+                            <div class="product-cart__price">
+                                <span class="product-cart__price--perEach">1200.00p/ед.</span>
+                                <span class="product-cart__price--total">12000.00p</span>
+                            </div>
+
+                            <div class="alert alert-danger">
+                                <a title="Товар недоступен в нужном количестве или отсутствует на складе!">
+                                    <span>Товар недоступен в нужном количестве или отсутствует на складе!</span>
+                                </a>
+                            </div>
+
+                            <div class="product-cart__quantity">
+
+                                <div class="choice-count__container number-spinner">
+                                    <button type="button" class="choice-count__decrement" data-dir="dwn">
+                                        -
+                                    </button>
+
+                                    <!-- <input class="choice-count__value" type="text" name="quantity"
+                                value="{{ minimum }}" size="3" id="input-quantity"> -->
+                                    <input class="choice-count__value" type="text" name="quantity" value="10" size="3"
+                                        id="input-quantity">
+
+                                    <button type="button" class="choice-count__increment" data-dir="up">
+                                        +
+                                    </button>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                            <div class="product-cart__remove">
+
+
+
+                                <button type="submit" data-toggle="tooltip" title="{{ button_update }}"
+                                    class="btn btn--transparent btn--no-text refresh">
+                                    <span class="refresh__icon"></span>
+                                </button>
+
+
+                                <button type="button" onclick="" title="{{ button_remove }}"
+                                    class="btn btn--transparent btn--no-text remove">
+                                    <span class="remove__icon"></span>
+                                </button>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-cart__footer">
+
+
+                            <table class="product-cart__totals">
+                                <!-- {% for total in totals %} -->
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            <!-- {{ total.title }}: -->
+                                            Итого:
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <!-- {{ total.text }} -->
+                                        20130.00р.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            <!-- {{ total.title }}: -->
+                                            Всего:
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        <!-- {{ total.text }} -->
+                                        20130.00р.
+                                    </td>
+                                </tr>
+                                <!-- {% endfor %} -->
+                            </table>
+
+
+                            <div class="product-cart__buttons">
+
+                                <a href="{{ continue }}" class="btn btn--white">
+                                    <!-- {{ button_shopping }} -->
+                                    <span>Продолжить покупки</span>
+                                </a>
+
+                                <a href="{{ checkout }}" class="btn btn--red">
+                                    <!-- {{ button_checkout }} -->
+                                    <span>Оформление заказа</span>
+                                </a>
+
+                            </div>
+
+                            <!-- {{ content_bottom }} -->
+
+                            <!-- {{ column_right }} -->
+                        </div>
+
+                        <!-- {% if modules %}
+                        <h2>{{ text_next }}</h2>
+                        <p>{{ text_next_choice }}</p>
+                        <div class="panel-group" id="accordion"> {% for module in modules %}
+                            {{ module }}
+                            {% endfor %} </div>
+                        {% endif %} -->
+
+
+
+
+                    </div>
+
+
+
+                </form>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
 
             <section class="section" id="catalog-category">
     <div class="section__container __container">
@@ -3266,6 +3506,40 @@
 </section>
 
         </main>
+
+
+
+        <div class="popup popup--info">
+    <div class="popup__cart">
+        <span class="popup__cart-info">
+            <!-- Товар <a href="http://uspeh-magazin/index.php?route=product/product&amp;product_id=86">CARC-757</a> добавлен в
+            <a href="http://uspeh-magazin/index.php?route=checkout/cart">корзину покупок</a>! -->
+            Товаров: 43 (7923.00р.)
+        </span>
+
+        <button data-target="sidebar__cart" class="popup__cart-btn added">
+            <svg class="goods-1" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="2"></rect>
+            </svg>
+            <svg class="goods-2" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="2"></rect>
+            </svg>
+            <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6">
+                </path>
+            </svg>
+            <svg class="tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                <path fill="#ffffff"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z">
+                </path>
+            </svg>
+        </button>
+
+    </div>
+</div>
 
         <footer class="footer">
     <div class="footer__container __container">
