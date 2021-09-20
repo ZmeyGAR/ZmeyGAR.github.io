@@ -2707,8 +2707,7 @@ main {
 
 .about__container {
   padding-top: 0;
-  padding-bottom: 0;
-  background: url(../image/section_bg.png) repeat fixed; }
+  padding-bottom: 0; }
 
 .about__content {
   max-width: 980px;
@@ -2721,62 +2720,23 @@ main {
           justify-content: flex-start;
   background: none; }
 
-.about-carusel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  min-height: -webkit-max-content;
-  min-height: -moz-max-content;
-  min-height: max-content;
-  margin: 30px;
-  padding-bottom: 30px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(100%);
-          flex: 1 1 calc(100%);
-  max-width: calc(100%); }
-  .about-carusel .swiper-slide {
-    text-align: start; }
-    .about-carusel .swiper-slide > * {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      font-size: 1em;
-      line-height: 1.3em; }
-    .about-carusel .swiper-slide a {
-      color: whitesmoke; }
-  .about-carusel .swiper-pagination {
-    bottom: -5px;
-    font-size: 1.5em;
-    line-height: 1em; }
-    .about-carusel .swiper-pagination-bullet {
-      width: calc(1em - 2 * 3px);
-      height: calc(1em - 2 * 3px);
-      border-radius: 100%;
-      border: 3px solid #f84c00;
-      -webkit-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear; }
-      .about-carusel .swiper-pagination-bullet-active {
-        background-color: #629600; }
-  .about-carusel__container {
-    position: relative;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    width: 100%;
-    height: 100%; }
+.about__info {
+  text-align: start;
+  padding: 0 30px 0;
+  color: #4b3221; }
+  .about__info-slide {
+    padding: 1px 0;
+    color: inherit;
+    border-bottom: 1px dashed #6b6b6b; }
+    .about__info-slide .widget {
+      display: block; }
+    .about__info-slide:last-child {
+      border: none;
+      padding-bottom: 45px; }
+  .about__info picture,
+  .about__info source,
+  .about__info img {
+    display: none; }
 
 .brands {
   display: -webkit-box;
@@ -4818,25 +4778,15 @@ main {
       height: auto; }
     .contacts__list {
       padding: 20px; }
-    .about__container {
-      background: none !important; }
     .about__content {
-      background: url(../image/farmer.png) right bottom no-repeat;
       margin: 45px auto 0; }
-    .about-carusel {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 1 calc(max(50%, 60%) - 100px);
-              flex: 0 1 calc(max(50%, 60%) - 100px);
-      max-width: calc(max(50%, 60%) - 100px);
-      background: none;
-      -o-border-image: url(../image/baloon_3.png) 10% round;
-         border-image: url(../image/baloon_3.png) 10% fill round;
-      border-image-outset: 100px;
-      border-image-width: 60px;
-      min-height: 400px;
-      margin: 50px 100px 70px; }
-        .about-carusel .swiper-slide > * {
-          font-size: 1.2em; }
+      .about__info picture,
+      .about__info source,
+      .about__info img {
+        display: block;
+        float: right;
+        shape-outside: url(../image/farmer.png);
+        shape-margin: 10px; }
     .payment__info,
     .delivery__info {
       font-size: 1.8em; }
@@ -5340,7 +5290,6 @@ main {
 .recomended__slider .swiper-button-prev::after,.recomended__slider .swiper-button-next::after{background:url(../icons/sprite.webp) -246px 8px no-repeat}
 .blog__banner .swiper-button-prev::after,.blog__banner .swiper-button-next::after{background:url(../icons/sprite.webp) -246px 8px no-repeat}
 .article__link--img{background:url(../image/article_card_1.webp) 0 0/cover no-repeat}
-.about__container{background:url(../image/section_bg.webp) repeat fixed}
 .product-attributes__list .plant .plant__list:before{background:url(../icons/plant.webp) center/contain no-repeat}
 .product-attributes__list .fetus .fetus__list:before{background:url(../icons/fetus.webp) center/contain no-repeat}
 .product-attributes__list .additional-info .additional-info__list:before{background:url(../icons/additional_info.webp) center/contain no-repeat}
@@ -5367,7 +5316,6 @@ main {
 
 @supports (-webkit-appearance:none){
 .main-page .hero{background:url(../image/soya.w1693.webp) top/cover no-repeat}
-.about__content{background:url(../image/farmer.webp) right bottom no-repeat}
 .success{background:url(../image/farmer.webp) right bottom no-repeat}
 }
 
