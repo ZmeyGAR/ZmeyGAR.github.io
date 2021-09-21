@@ -33,12 +33,16 @@
 <!-- normalize.css -->
 <link rel="stylesheet" href="styles/normalize.css" type="text/css">
 <link rel="stylesheet" href="styles/swiper_slider_bundle.css" type="text/css">
+<link rel="stylesheet" href="styles/magnific-popup.css" type="text/css">
 
 <!-- STYLESHEET -->
 <link rel="stylesheet" href="styles/style.min.css" type="text/css">
 
 
 <!-- SCRIPTS -->
+
+<script src="scripts/jquery-2.1.1.min.js" defer></script>
+<script src="scripts/jquery.magnific-popup.min.js" defer></script>
 <script src="scripts/swiper-bundle.js" defer></script>
 <script src="scripts/main.min.js" type="module" defer></script>
 
@@ -583,95 +587,74 @@
 
                                     <div class="swiper-wrapper">
 
-                                        <div class="swiper-slide ">
+                                        <div class="swiper-slide">
                                             <div class="galery__item">
                                                 <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h245.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1_2.h245.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1.jpg 2x">
+
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1.jpg 2x">
+
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-0x530.jpg 2x">
+
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
 
                                                 </picture>
 
                                                 <div class="swiper-lazy-preloader"></div>
-
                                             </div>
+
+
                                         </div>
 
                                         <div class="swiper-slide">
                                             <div class="galery__item">
 
                                                 <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1-1.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-1.jpg 2x">
 
-                                                </picture>
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-1.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-1.jpg 2x">
 
-                                                <div class="swiper-lazy-preloader"></div>
-                                            </div>
-                                        </div>
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-1-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-1-0x530.jpg 2x">
 
-                                        <div class="swiper-slide">
-                                            <div class="galery__item">
-
-                                                <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
-
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
-
-                                                </picture>
-
-                                                <div class="swiper-lazy-preloader"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="galery__item">
-
-                                                <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
-
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-1-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
 
                                                 </picture>
-
-
-
-
-                                                <div class="swiper-lazy-preloader"></div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="galery__item">
-                                                <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
-
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
-
-                                                </picture>
-
 
 
                                                 <div class="swiper-lazy-preloader"></div>
@@ -680,19 +663,75 @@
 
                                         <div class="swiper-slide">
                                             <div class="galery__item">
-                                                <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                <picture>
+
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1-2.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-2.jpg 2x">
+
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-2.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-2.jpg 2x">
+
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-2-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-2-0x530.jpg 2x">
+
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-2-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
+
+                                                </picture>
+
+
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="galery__item">
+                                                <picture>
+
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1-3.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-3.jpg 2x">
+
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-3.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-3.jpg 2x">
+
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-3-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-3-0x530.jpg 2x">
+
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-3-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
 
                                                 </picture>
 
                                                 <div class="swiper-lazy-preloader"></div>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -705,13 +744,32 @@
                                         <div class="swiper-slide">
                                             <div class="galery__item">
                                                 <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/activ-cug-8722_f1.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                                    <img data-src="image/catalog/seeds/watermelon/activ-cug-8722_f1.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1.jpg 2x">
+
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1.jpg 2x">
+
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-0x530.jpg 2x">
+
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        data-zoom="image/catalog/seeds/watermelon/gaspar_f1.jpg"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
 
                                                 </picture>
 
@@ -725,12 +783,32 @@
                                             <div class="galery__item">
 
                                                 <picture>
-                                                    <source data-srcset="image/catalog/seeds/watermelon/alto_f1.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                                    <img data-src="image/catalog/seeds/watermelon/alto_f1.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1-1.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-1.jpg 2x">
+
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-1.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-1.jpg 2x">
+
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-1-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-1-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-1-0x530.jpg 2x">
+
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        data-zoom="image/catalog/seeds/watermelon/gaspar_f1-1.jpg"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-1-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
 
                                                 </picture>
 
@@ -743,12 +821,32 @@
                                             <div class="galery__item">
 
                                                 <picture>
-                                                    <source data-srcset="image/catalog/seeds/watermelon/amaril_f1.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                                    <img data-src="image/catalog/seeds/watermelon/amaril_f1.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1-2.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-2.jpg 2x">
+
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-2.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-2.jpg 2x">
+
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-2-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-2-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-2-0x530.jpg 2x">
+
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        data-zoom="image/catalog/seeds/watermelon/gaspar_f1-2.jpg"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-2-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
 
                                                 </picture>
 
@@ -760,57 +858,46 @@
                                         <div class="swiper-slide">
                                             <div class="galery__item">
                                                 <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1_3@2x.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
 
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1_3@2x.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x530.webp  1x, image/catalog/seeds/watermelon/gaspar_f1-3.webp 2x">
+                                                    <source media="(min-width: 1023px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x530.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-3.jpg 2x">
 
-                                                </picture>
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x700.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-3.webp 2x">
+                                                    <source media="(min-width: 767px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x700.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-3.jpg 2x">
 
-                                                <div class="swiper-lazy-preloader"></div>
-                                            </div>
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/webp"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x300.webp 1x, image/catalog/seeds/watermelon/gaspar_f1-3-0x530.webp 2x">
+                                                    <source media="(max-width: 425px)" class="swiper-lazy "
+                                                        src="image/no_image.png" type="image/image/jpg"
+                                                        srcset="image/catalog/seeds/watermelon/gaspar_f1-3-0x300.jpg 1x, image/catalog/seeds/watermelon/gaspar_f1-3-0x530.jpg 2x">
 
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="galery__item">
-                                                <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1.h245.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
-
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1.h245.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
-
-                                                </picture>
-
-                                                <div class="swiper-lazy-preloader"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="galery__item">
-                                                <picture>
-                                                    <source
-                                                        data-srcset="image/catalog/seeds/watermelon/gaspar-f1_2.h352.webp"
-                                                        src="image/logo.webp" type="image/webp" class="swiper-lazy">
-
-                                                    <img data-src="image/catalog/seeds/watermelon/gaspar-f1_2.h352.jpg"
-                                                        src="image/logo.png""
-                                                        class=" swiper-lazy" alt="Арбуз Гаспар F1">
+                                                    <img class="swiper-lazy " data-mfp-src="#magnific-popup"
+                                                        data-zoom="image/catalog/seeds/watermelon/gaspar_f1-3.webp"
+                                                        src="image/catalog/seeds/watermelon/gaspar_f1-3-0x530.jpg"
+                                                        title="Арбуз Гаспар F1" alt="Арбуз Гаспар F1">
 
                                                 </picture>
 
                                                 <div class="swiper-lazy-preloader"></div>
                                             </div>
+
                                         </div>
 
                                     </div>
 
+                                </div>
+
+                                <div class="galery__zoom">
+                                    <a href="#magnific-popup" class="galery__zoom-link">Увеличить</a>
                                 </div>
 
                             </div>
@@ -3256,7 +3343,20 @@
 
 
 
-
+    <!-- <div id="magnific-popup" class="mfp-hide magnific-popup">
+        <a title="The Cleaner">
+            <picture><source srcset="image/catalog/seeds/watermelon/gaspar_f1.webp" type="image/webp"><img src="image/catalog/seeds/watermelon/gaspar_f1.jpg"></picture>
+        </a>
+        <a title="The Cleaner">
+            <picture><source srcset="image/catalog/seeds/watermelon/gaspar_f1-1.webp" type="image/webp"><img src="image/catalog/seeds/watermelon/gaspar_f1-1.jpg"></picture>
+        </a>
+        <a title="The Cleaner">
+            <picture><source srcset="image/catalog/seeds/watermelon/gaspar_f1-2.webp" type="image/webp"><img src="image/catalog/seeds/watermelon/gaspar_f1-2.jpg"></picture>
+        </a>
+        <a title="The Cleaner">
+            <picture><source srcset="image/catalog/seeds/watermelon/gaspar_f1-3.webp" type="image/webp"><img src="image/catalog/seeds/watermelon/gaspar_f1-3.jpg"></picture>
+        </a>
+    </div> -->
 
 
 
@@ -3312,9 +3412,6 @@
 </footer>
 
     </div>
-
-
-
 
 </body>
 
