@@ -3171,8 +3171,8 @@ main {
             flex: 1 1 auto;
     height: 100%; }
     .galery__slider .swiper-slide {
-      cursor: url(../image/zoom.png), -webkit-zoom-in;
-      cursor: url(../image/zoom.png), zoom-in;
+      cursor: url(../icons/zoom.png), -webkit-zoom-in;
+      cursor: url(../icons/zoom.png), zoom-in;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -3656,56 +3656,54 @@ main {
   background: -o-radial-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
   background: radial-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
   z-index: 10; }
-
-.preloader > .preloader-box {
-  position: absolute;
-  width: 275px;
-  height: 30px;
-  top: 45%;
-  left: 50%;
-  margin: -30px 0 0 -135px;
-  -webkit-perspective: 200px;
-          perspective: 200px; }
-
-.preloader-box > div {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: #CCC;
-  float: left;
-  text-align: center;
-  line-height: 30px;
-  font-family: Verdana;
-  font-size: 20px;
-  color: #FFF;
-  margin-right: 5px;
-  background: #3366FF; }
-  .preloader-box > div:last-child {
-    margin: 0; }
-  .preloader-box > div:nth-child(1) {
-    -webkit-animation: movement 600ms ease 0ms infinite alternate;
-            animation: movement 600ms ease 0ms infinite alternate; }
-  .preloader-box > div:nth-child(2) {
-    -webkit-animation: movement 600ms ease 75ms infinite alternate;
-            animation: movement 600ms ease 75ms infinite alternate; }
-  .preloader-box > div:nth-child(3) {
-    -webkit-animation: movement 600ms ease 150ms infinite alternate;
-            animation: movement 600ms ease 150ms infinite alternate; }
-  .preloader-box > div:nth-child(4) {
-    -webkit-animation: movement 600ms ease 225ms infinite alternate;
-            animation: movement 600ms ease 225ms infinite alternate; }
-  .preloader-box > div:nth-child(5) {
-    -webkit-animation: movement 600ms ease 300ms infinite alternate;
-            animation: movement 600ms ease 300ms infinite alternate; }
-  .preloader-box > div:nth-child(6) {
-    -webkit-animation: movement 600ms ease 375ms infinite alternate;
-            animation: movement 600ms ease 375ms infinite alternate; }
-  .preloader-box > div:nth-child(7) {
-    -webkit-animation: movement 600ms ease 450ms infinite alternate;
-            animation: movement 600ms ease 450ms infinite alternate; }
-  .preloader-box > div:nth-child(8) {
-    -webkit-animation: movement 600ms ease 525ms infinite alternate;
-            animation: movement 600ms ease 525ms infinite alternate; }
+  .preloader > .preloader-box {
+    position: absolute;
+    width: 275px;
+    height: 30px;
+    top: 45%;
+    left: 50%;
+    margin: -30px 0 0 -135px;
+    -webkit-perspective: 200px;
+            perspective: 200px; }
+  .preloader-box > div {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #CCC;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-family: Verdana;
+    font-size: 20px;
+    color: #FFF;
+    margin-right: 5px;
+    background: #70a027; }
+    .preloader-box > div:last-child {
+      margin: 0; }
+    .preloader-box > div:nth-child(1) {
+      -webkit-animation: movement 600ms ease 0ms infinite alternate;
+              animation: movement 600ms ease 0ms infinite alternate; }
+    .preloader-box > div:nth-child(2) {
+      -webkit-animation: movement 600ms ease 75ms infinite alternate;
+              animation: movement 600ms ease 75ms infinite alternate; }
+    .preloader-box > div:nth-child(3) {
+      -webkit-animation: movement 600ms ease 150ms infinite alternate;
+              animation: movement 600ms ease 150ms infinite alternate; }
+    .preloader-box > div:nth-child(4) {
+      -webkit-animation: movement 600ms ease 225ms infinite alternate;
+              animation: movement 600ms ease 225ms infinite alternate; }
+    .preloader-box > div:nth-child(5) {
+      -webkit-animation: movement 600ms ease 300ms infinite alternate;
+              animation: movement 600ms ease 300ms infinite alternate; }
+    .preloader-box > div:nth-child(6) {
+      -webkit-animation: movement 600ms ease 375ms infinite alternate;
+              animation: movement 600ms ease 375ms infinite alternate; }
+    .preloader-box > div:nth-child(7) {
+      -webkit-animation: movement 600ms ease 450ms infinite alternate;
+              animation: movement 600ms ease 450ms infinite alternate; }
+    .preloader-box > div:nth-child(8) {
+      -webkit-animation: movement 600ms ease 525ms infinite alternate;
+              animation: movement 600ms ease 525ms infinite alternate; }
 
 .checkout {
   display: -webkit-box;
@@ -4639,7 +4637,7 @@ main {
             transform: scale(1.5) translateY(-25px) rotateX(45deg);
     -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
             box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
-    background: #3399FF; } }
+    background: #f84c00; } }
 
 @keyframes movement {
   from {
@@ -4652,7 +4650,7 @@ main {
             transform: scale(1.5) translateY(-25px) rotateX(45deg);
     -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
             box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
-    background: #3399FF; } }
+    background: #f84c00; } }
 
 @media (min-width: 424.98px){
           .sidebar__body .sidebar__feedback .phone-contact {
@@ -5310,8 +5308,8 @@ main {
         background: rgba(0, 0, 0, 0.137);
         background-position: 50% 50%;
         z-index: 2;
-        cursor: url(../image/zoom.png), -webkit-zoom-out;
-        cursor: url(../image/zoom.png), zoom-out; }
+        cursor: url(../icons/zoom.png), -webkit-zoom-out;
+        cursor: url(../icons/zoom.png), zoom-out; }
         .galery__zoom-link {
           display: none; }
         .product-attributes__tabs-nav .tab-link:hover {
